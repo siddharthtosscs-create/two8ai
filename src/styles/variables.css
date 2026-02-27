@@ -1,0 +1,42 @@
+:root {
+    --primary: #2D3A8C;
+    --accent: #FF614A;
+    --secondary: #E5E7EB;
+    --text: #111827;
+    --hero-gradient-start: #4E5DCA;
+    --hero-gradient-end: #6B77F2;
+
+    --font-inter: 'Inter', sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-dark {
+    color: var(--text);
+}
+
+.gradient-hero {
+    background: linear-gradient(135deg, var(--hero-gradient-start), var(--hero-gradient-end));
+}

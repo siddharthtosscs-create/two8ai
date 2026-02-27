@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "./variables.css";
+@import "./components.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@theme {
+    --color-primary: #2D3A8C;
+    --color-accent: #FF614A;
+    --color-secondary: #E5E7EB;
+    --color-text-main: #111827;
+
+    --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+
+    html,
+    body {
+        @apply font-inter text-text-main;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold;
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .animate-shimmer {
+        background-size: 200% auto;
+        animation: shimmer 6s linear infinite;
+    }
+}
