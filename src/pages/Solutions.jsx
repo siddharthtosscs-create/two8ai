@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import StaggerContainer, { StaggerItem } from '../components/animations/StaggerContainer';
 import FadeInSection from '../components/animations/FadeInSection';
 import SolutionsHeroVisualizer from '../components/SolutionsHeroVisualizer';
+import ToaiEcosystemDoc from '../assets/docs/The_TWO8_TOAI_Ecosystem.pdf';
 
 const categories = ["Core Ops", "Growth", "Experience"];
 
@@ -77,6 +78,8 @@ const cardStyles = {
 const Solutions = () => {
     const heroRef = useRef(null);
     const [selectedCategory, setSelectedCategory] = useState("All");
+    const [isDocsOpen, setIsDocsOpen] = useState(false);
+    const [isDocsFullscreen, setIsDocsFullscreen] = useState(false);
     const { scrollY } = useScroll();
 
     const heroY = useTransform(scrollY, [0, 500], [0, 120]);
@@ -155,10 +158,14 @@ const Solutions = () => {
                                             </Link>
                                         </motion.div>
                                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                            <Link to="/contact" className="flex items-center justify-center gap-3 bg-white border-2 border-slate-100 text-slate-900 hover:border-indigo-600 hover:text-indigo-600 px-8 py-3.5 rounded-[1.5rem] font-bold text-base transition-all shadow-xl shadow-slate-200/50">
+                                            <button
+                                                type="button"
+                                                onClick={() => setIsDocsOpen(true)}
+                                                className="flex items-center justify-center gap-3 bg-white border-2 border-slate-100 text-slate-900 hover:border-indigo-600 hover:text-indigo-600 px-8 py-3.5 rounded-[1.5rem] font-bold text-base transition-all shadow-xl shadow-slate-200/50"
+                                            >
                                                 <Command className="w-5 h-5 opacity-60" />
                                                 Docs
-                                            </Link>
+                                            </button>
                                         </motion.div>
                                     </div>
                                 </StaggerItem>
@@ -188,6 +195,52 @@ const Solutions = () => {
                     className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"
                 />
             </section>
+
+            {/* Docs Dialog */}
+            {isDocsOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+                    <div
+                        className={`relative bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col ${
+                            isDocsFullscreen ? 'w-screen h-screen rounded-none' : 'w-[90vw] max-w-5xl h-[80vh]'
+                        }`}
+                    >
+                        <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200 bg-slate-50/80 backdrop-blur-sm">
+                            <div className="flex items-center gap-2">
+                                <Command className="w-4 h-4 text-slate-500" />
+                                <span className="text-sm font-semibold text-slate-700">
+                                    TWO8 TOAI Ecosystem Docs
+                                </span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <button
+                                    type="button"
+                                    onClick={() => setIsDocsFullscreen((prev) => !prev)}
+                                    className="px-3 py-1.5 text-xs font-semibold rounded-full border border-slate-200 text-slate-600 hover:border-indigo-500 hover:text-indigo-600 bg-white transition-colors"
+                                >
+                                    {isDocsFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => {
+                                        setIsDocsOpen(false);
+                                        setIsDocsFullscreen(false);
+                                    }}
+                                    className="px-3 py-1.5 text-xs font-semibold rounded-full border border-slate-200 text-slate-600 hover:border-rose-500 hover:text-rose-600 bg-white transition-colors"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                        <div className="flex-1">
+                            <iframe
+                                title="The TWO8 TOAI Ecosystem"
+                                src={ToaiEcosystemDoc}
+                                className="w-full h-full rounded-b-2xl"
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Solutions Content - Enhanced Bento Grid (Light Theme) */}
             <section className="relative py-24 overflow-hidden bg-white">

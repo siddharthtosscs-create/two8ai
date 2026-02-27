@@ -81,8 +81,8 @@ const About = () => {
                                     <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-20 bg-gradient-to-r from-transparent via-orange-100/80 to-transparent blur-xl pointer-events-none" />
 
                                     {/* Left column nodes */}
-                                    <div className="relative flex items-center justify-between gap-4">
-                                        <div className="flex flex-col gap-3">
+                                    <div className="relative flex flex-col items-center gap-6 md:flex-row md:items-stretch md:justify-between md:gap-4">
+                                        <div className="flex flex-col gap-3 items-center md:items-start">
                                             <DiagramNode
                                                 side="left"
                                                 icon={Users}
@@ -114,7 +114,7 @@ const About = () => {
                                         </div>
 
                                         {/* Center TOAI core */}
-                                        <div className="relative z-10 flex flex-col items-center justify-center px-7 py-5 rounded-[1.75rem] bg-white shadow-[0_18px_45px_rgba(248,113,22,0.45)] border border-orange-100">
+                                        <div className="relative z-10 flex w-full max-w-xs flex-col items-center justify-center px-7 py-5 rounded-[1.75rem] bg-white shadow-[0_18px_45px_rgba(248,113,22,0.45)] border border-orange-100 md:w-auto">
                                             <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-1">
                                                 TOAI
                                             </p>
@@ -122,7 +122,7 @@ const About = () => {
                                         </div>
 
                                         {/* Right column nodes */}
-                                        <div className="flex flex-col gap-3 items-end">
+                                        <div className="flex flex-col gap-3 items-center md:items-end">
                                             <DiagramNode
                                                 side="right"
                                                 icon={Building2}

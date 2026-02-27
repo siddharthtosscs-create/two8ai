@@ -13,8 +13,10 @@
     "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.34.0",
     "lucide-react": "^0.567.0",
+    "pdfjs-dist": "^5.4.624",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-pdf": "^10.4.1",
     "react-router-dom": "^7.13.0",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1"
