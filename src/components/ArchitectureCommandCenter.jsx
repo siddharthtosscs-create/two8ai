@@ -365,7 +365,13 @@ const StationNode = ({ station, index, isActive, onClick }) => {
                             className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 group-hover:text-indigo-500 transition-colors mt-2"
                         >
                             <ScanLine className="w-3 h-3" />
-                            <span className="uppercase tracking-widest">Tap to analyze</span>
+                            <span className="uppercase tracking-widest">
+                                {station.title === 'Enterprise Connectors'
+                                    ? 'Inspect Data Flow'
+                                    : station.title === 'Enterprise Security Layer'
+                                        ? 'Inspect Security'
+                                        : 'Tap to analyze'}
+                            </span>
                             <ChevronRight className="w-3 h-3" />
                         </motion.div>
                     )}
@@ -394,45 +400,45 @@ const ArchitectureCommandCenter = () => {
     const stations = [
         {
             icon: Layers,
-            title: 'Intelligence Layer',
-            desc: 'Proprietary vectorization engine that translates multi-modal data into singular cognitive context.',
+            title: 'Enterprise Intelligence Layer',
+            desc: 'A unified intelligence engine that converts structured and unstructured enterprise data into contextual operational insight.',
             color: 'indigo',
             gradient: 'from-indigo-600 to-violet-600',
-            features: ['LLM Agnostic', 'Context Persistent', 'Multi-modal'],
+            features: ['Model Agnostic', 'Persistent Context', 'Multi-Modal Data'],
             specs: [
-                { label: 'Vector Throughput', value: '2.4M', unit: '/sec' },
+                { label: 'Signal Processing', value: '2.4M', unit: '/sec' },
                 { label: 'Context Window', value: '128K', unit: 'tokens' },
                 { label: 'Accuracy', value: '99.7', unit: '%' },
             ],
-            logMessage: 'Cognitive engine initialized. Vector pipeline nominal.',
+            logMessage: 'Intelligence pipeline active. Enterprise data graph synchronized.',
         },
         {
             icon: Server,
-            title: 'Adaptive Connectors',
-            desc: 'Auto-discovery of data structures across SAP, Salesforce, and archaic file shares with zero config.',
+            title: 'Enterprise Connectors',
+            desc: 'Automatically maps enterprise data structures across ERP, CRM, and document systems with minimal configuration.',
             color: 'blue',
             gradient: 'from-blue-600 to-cyan-500',
-            features: ['Zero Config', 'Auto-Discovery', 'Schema Mapping'],
+            features: ['Low Configuration', 'Schema Discovery', 'Structure Mapping'],
             specs: [
-                { label: 'Connectors', value: '200', unit: '+' },
-                { label: 'Sync Latency', value: '<50', unit: 'ms' },
-                { label: 'Uptime SLA', value: '99.99', unit: '%' },
+                { label: 'Connectors', value: '200+', unit: '' },
+                { label: 'Data Sync Latency', value: '<50', unit: 'ms' },
+                { label: 'Platform SLA', value: '99.99%', unit: '' },
             ],
-            logMessage: 'Connector fabric online. 200+ endpoints mapped.',
+            logMessage: 'Integration layer active. 200+ enterprise systems synchronized.',
         },
         {
             icon: ShieldCheck,
-            title: 'Sovereign Security',
-            desc: 'Deploy anywhere. Remain air-gapped. Your LLM weights and vector data never leave your VPN.',
+            title: 'Enterprise Security Layer',
+            desc: 'Deploy within your infrastructure with full control over models, data access, and enterprise security boundaries.',
             color: 'emerald',
             gradient: 'from-emerald-600 to-teal-500',
-            features: ['Air-Gapped', 'PII Redaction', 'On-Prem Ready'],
+            features: ['Secure Isolation', 'PII Protection', 'On-Prem Deployment'],
             specs: [
-                { label: 'Encryption', value: 'AES', unit: '-256' },
-                { label: 'Compliance', value: 'SOC2', unit: '+ GDPR' },
-                { label: 'Data Residency', value: '100', unit: '%' },
+                { label: 'Data Encryption', value: 'AES-256', unit: '' },
+                { label: 'Compliance', value: 'SOC2 / GDPR', unit: '' },
+                { label: 'Data Residency', value: '100%', unit: '' },
             ],
-            logMessage: 'Security perimeter active. Zero-trust validated.',
+            logMessage: 'Security framework active. Enterprise trust boundaries verified.',
         },
     ];
 
@@ -519,7 +525,7 @@ const ArchitectureCommandCenter = () => {
                             className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-8 bg-indigo-50 border border-indigo-200/60"
                         >
                             <Radio className="w-3.5 h-3.5 text-indigo-500" />
-                            <span className="text-[10px] font-mono text-indigo-600 uppercase tracking-[0.3em]">Architecture Overview</span>
+                            <span className="text-[10px] font-mono text-indigo-600 uppercase tracking-[0.3em]">TOAI Architecture</span>
                             <motion.div
                                 animate={{ opacity: [0.3, 1, 0.3] }}
                                 transition={{ duration: 2, repeat: Infinity }}
@@ -540,7 +546,7 @@ const ArchitectureCommandCenter = () => {
                                     backgroundSize: '200% 200%',
                                     animation: 'gradientShift 4s ease infinite',
                                 }}>
-                                    Cognitive Scale
+                                    Enterprise Intelligence
                                 </span>
                                 <motion.span
                                     initial={{ scaleX: 0 }}
@@ -558,7 +564,7 @@ const ArchitectureCommandCenter = () => {
                             transition={{ delay: 0.6 }}
                             className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed"
                         >
-                            We didn't just build an AI tool. We built the fundamental intelligence layer that transforms how enterprises interact with their own collective memory.
+                            TOAI is not another AI tool. It is the enterprise intelligence layer that connects systems, data, and workflows into a unified operational understanding.
                         </motion.p>
                     </div>
 
@@ -635,7 +641,7 @@ const ArchitectureCommandCenter = () => {
                                 transition={{ delay: 1.5 }}
                                 className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap"
                             >
-                                <span className="text-[9px] font-mono text-indigo-400 uppercase tracking-[0.4em]">TOAI Core</span>
+                                <span className="text-[9px] font-mono text-indigo-400 uppercase tracking-[0.4em]">TOAI Intelligence Core</span>
                             </motion.div>
                         </div>
                     </motion.div>
@@ -643,9 +649,9 @@ const ArchitectureCommandCenter = () => {
                     {/* ── Floating HUD Metrics ── */}
                     {bootPhase >= 2 && (
                         <>
-                            <FloatingHUD label="Throughput" value="2.4M" unit="/s" x={8} y={35} delay={1} />
+                            <FloatingHUD label="Throughput" value="2.4M" unit="Signals/s" x={8} y={35} delay={1} />
                             <FloatingHUD label="Latency" value="<50" unit="ms" x={92} y={35} delay={1.3} />
-                            <FloatingHUD label="Nodes" value="200" unit="+" x={15} y={70} delay={1.6} />
+                            <FloatingHUD label="Nodes" value="200" unit="Systems" x={15} y={70} delay={1.6} />
                             <FloatingHUD label="Uptime" value="99.99" unit="%" x={85} y={70} delay={1.9} />
                         </>
                     )}
@@ -674,9 +680,9 @@ const ArchitectureCommandCenter = () => {
                     >
                         {[
                             { label: 'System Status', value: 'Operational', dotColor: 'bg-emerald-500' },
-                            { label: 'Architecture', value: 'v3.2.1', dotColor: 'bg-indigo-500' },
-                            { label: 'Last Sync', value: 'Just now', dotColor: 'bg-blue-500' },
-                            { label: 'Regions', value: '12 Active', dotColor: 'bg-violet-500' },
+                            { label: 'Architecture Version', value: 'v3.2', dotColor: 'bg-indigo-500' },
+                            { label: 'Last Sync', value: 'Real-Time', dotColor: 'bg-blue-500' },
+                            { label: 'Active Regions', value: '12', dotColor: 'bg-violet-500' },
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-2.5">
                                 <motion.div

@@ -100,8 +100,8 @@ const SolutionsHeroVisualizer = () => {
                             ))}
                         </div>
                         <div>
-                            <div className="text-[9px] font-black text-violet-600 uppercase tracking-tighter">Departments_Active</div>
-                            <div className="text-xs font-bold text-slate-700">6 Teams Connected</div>
+                            <div className="text-[9px] font-black text-violet-600 uppercase tracking-tighter">Departments Connected</div>
+                            <div className="text-xs font-bold text-slate-700">6 Active Workflows</div>
                         </div>
                     </div>
                 </motion.div>
@@ -116,8 +116,8 @@ const SolutionsHeroVisualizer = () => {
                             <Shield className="w-4 h-4 text-amber-600" />
                         </div>
                         <div>
-                            <div className="text-[9px] font-black text-amber-600 uppercase">Secure_Workflows</div>
-                            <div className="text-[10px] font-bold text-slate-600">AES-256</div>
+                            <div className="text-[9px] font-black text-amber-600 uppercase">Enterprise Security</div>
+                            <div className="text-[10px] font-bold text-slate-600">AES-256 Encryption</div>
                         </div>
                     </div>
                 </motion.div>

@@ -36,9 +36,9 @@ import FadeInSection from '../components/animations/FadeInSection';
 // --- Enhanced Features Data ---
 const featuresList = [
     {
-        title: "AI Chat & Conversation Engine",
-        tagline: "Context-aware. Sentiment-aware. Intent-aware.",
-        desc: "Advanced NLP that understands nuance, multi-turn context, and emotional intelligence across all enterprise communications.",
+        title: "Enterprise Conversation Engine",
+        tagline: "Context-aware. Intent-aware. Business-aware.",
+        desc: "A conversational intelligence interface that understands enterprise context, multi-system data, and operational intent across internal communications.",
         icon: MessageSquare,
         image: chatImg,
         size: "large",
@@ -46,9 +46,9 @@ const featuresList = [
         accent: "hsl(255, 90%, 95%)",
     },
     {
-        title: "Custom AI Agents",
-        tagline: "Your data. Your rules.",
-        desc: "Build specialized AI workforces trained on your proprietary business logic and secure internal data.",
+        title: "Enterprise Reasoning Agents",
+        tagline: "Your systems. Your workflows.",
+        desc: "Deploy intelligent agents trained on your organization’s data, workflows, and operational logic to execute complex reasoning and system coordination.",
         icon: Bot,
         image: agentsImg,
         size: "medium",
@@ -56,9 +56,9 @@ const featuresList = [
         accent: "hsl(220, 90%, 95%)",
     },
     {
-        title: "Workflow Automation",
-        tagline: "Set it once. Run forever.",
-        desc: "Intelligent triggers and branched logic to automate high-stakes processes without human intervention.",
+        title: "Workflow Orchestration",
+        tagline: "Automate processes. Coordinate systems.",
+        desc: "An orchestration layer that connects applications, triggers workflows, and coordinates enterprise operations in real time.",
         icon: Workflow,
         image: workflowImg,
         size: "medium",
@@ -66,9 +66,9 @@ const featuresList = [
         accent: "hsl(160, 85%, 95%)",
     },
     {
-        title: "Procurement Management",
-        tagline: "Smarter buying. Faster approvals.",
-        desc: "Predictive purchasing and auto-reconiliation using AI to identify savings and risk in real-time.",
+        title: "Intelligent Procurement",
+        tagline: "Predict demand. Optimize spending.",
+        desc: "AI-driven procurement intelligence that analyzes vendor data, purchasing trends, and operational signals to optimize enterprise spending.",
         icon: ShoppingBag,
         image: procurementImg,
         size: "large",
@@ -76,9 +76,9 @@ const featuresList = [
         accent: "hsl(30, 95%, 95%)",
     },
     {
-        title: "Knowledge Management",
-        tagline: "One source. Infinite answers.",
-        desc: "A unified cognitive layer that connects disparate silos into a single, searchable intelligence hub.",
+        title: "Enterprise Knowledge Graph",
+        tagline: "Unified knowledge. Instant insight.",
+        desc: "A centralized intelligence graph that connects documents, systems, and operational knowledge into a unified enterprise memory.",
         icon: Database,
         image: knowledgeImg,
         size: "medium",
@@ -86,9 +86,9 @@ const featuresList = [
         accent: "hsl(280, 85%, 95%)",
     },
     {
-        title: "Support & Ticketing",
-        tagline: "Resolve first. Escalate smart.",
-        desc: "Self-healing support systems that resolve 80% of common issues before they reach a human agent.",
+        title: "Support Intelligence",
+        tagline: "Resolve faster. Escalate smarter.",
+        desc: "AI-powered support orchestration that resolves common issues automatically while providing contextual intelligence for complex cases.",
         icon: Ticket,
         image: chatImg, // Fallback
         size: "medium",
@@ -96,9 +96,9 @@ const featuresList = [
         accent: "hsl(10, 85%, 95%)",
     },
     {
-        title: "Analytics & Dashboards",
-        tagline: "See everything. Act on anything.",
-        desc: "Deep-dive operational metrics with automated trend discovery and predictive future-state modelling.",
+        title: "Operational Intelligence",
+        tagline: "Monitor systems. Detect patterns.",
+        desc: "Advanced analytics that uncover operational trends, system dependencies, and emerging risks across enterprise workflows.",
         icon: BarChart,
         image: analyticsImg,
         size: "medium",
@@ -106,9 +106,9 @@ const featuresList = [
         accent: "hsl(200, 90%, 95%)",
     },
     {
-        title: "Document Processing",
-        tagline: "From paper to data in seconds.",
-        desc: "Hyper-accurate OCR combined with LLM understanding for complex unstructured document extraction.",
+        title: "Document Intelligence",
+        tagline: "Extract insight from every document.",
+        desc: "AI-powered document understanding that converts contracts, reports, and archives into structured enterprise intelligence.",
         icon: FileText,
         image: workflowImg, // Fallback
         size: "large",
@@ -116,9 +116,9 @@ const featuresList = [
         accent: "hsl(340, 85%, 95%)",
     },
     {
-        title: "Entity Management",
-        tagline: "Structures. Subsidiaries. Simplified.",
-        desc: "Secure governance for global corporate structures, legal entities, and complex compliance records.",
+        title: "Enterprise Entity Management",
+        tagline: "Structure organizations with clarity.",
+        desc: "Govern corporate entities, subsidiaries, and compliance structures through a unified enterprise intelligence layer.",
         icon: Users,
         image: agentsImg, // Fallback
         size: "medium",
@@ -126,9 +126,9 @@ const featuresList = [
         accent: "hsl(255, 70%, 95%)",
     },
     {
-        title: "Admin & Governance",
-        tagline: "Control. Compliance. Confidence.",
-        desc: "Military-grade access controls and transparent audit trails for enterprise-wide AI deployment.",
+        title: "Governance & Security",
+        tagline: "Control intelligence responsibly.",
+        desc: "Enterprise-grade governance that ensures secure AI deployment, auditability, and policy enforcement across the TOAI platform.",
         icon: Shield,
         image: knowledgeImg, // Fallback
         size: "medium",
@@ -181,12 +181,12 @@ const InteractiveHub = () => {
     const containerRef = useRef(null);
 
     const hubLabels = [
-        { label: "AI Core", icon: Cpu, angle: 0 },
-        { label: "Automation", icon: Workflow, angle: 60 },
-        { label: "Knowledge", icon: Database, angle: 120 },
-        { label: "Security", icon: Shield, angle: 180 },
-        { label: "Analytics", icon: BarChart, angle: 240 },
-        { label: "Support", icon: Ticket, angle: 300 },
+        { label: "Reasoning Engine", icon: Cpu, angle: 0 },
+        { label: "Workflow Orchestration", icon: Workflow, angle: 60 },
+        { label: "Enterprise Knowledge Graph", icon: Database, angle: 120 },
+        { label: "Governance & Security", icon: Shield, angle: 180 },
+        { label: "Operational Intelligence", icon: BarChart, angle: 240 },
+        { label: "Decision Support", icon: Ticket, angle: 300 },
     ];
 
     return (
@@ -225,15 +225,15 @@ const InteractiveHub = () => {
                     >
                         <Zap className="w-8 h-8 lg:w-10 lg:h-10 text-indigo-600" strokeWidth={1.5} />
                     </motion.div>
-                    <span className="text-[8px] lg:text-xs font-black uppercase tracking-[0.2em] text-indigo-900 text-center">Intelligence Hub</span>
+                    <span className="text-[8px] lg:text-xs font-black uppercase tracking-[0.2em] text-indigo-900 text-center">TOAI Intelligence Hub</span>
                 </div>
             </motion.div>
 
             {/* Orbital Nodes */}
             {hubLabels.map((node, i) => {
                 const angle = (node.angle * Math.PI) / 180;
-                // Responsive radius
-                const radius = typeof window !== 'undefined' && window.innerWidth < 640 ? 120 : 180;
+                // Responsive radius — slightly larger to prevent overlap of wider labels
+                const radius = typeof window !== 'undefined' && window.innerWidth < 640 ? 140 : 220;
                 const x = radius * Math.cos(angle);
                 const y = radius * Math.sin(angle);
                 const isHovered = hoveredNode === i;
@@ -269,7 +269,10 @@ const InteractiveHub = () => {
                                 whileHover={{ scale: 1.1 }}
                             >
                                 <node.icon className={`w-4 h-4 lg:w-5 lg:h-5 ${isHovered ? 'text-indigo-600' : 'text-slate-600'}`} />
-                                <span className="text-xs lg:text-sm font-bold text-slate-800 whitespace-nowrap">{node.label}</span>
+                                <span className="text-xs lg:text-sm font-bold text-slate-800 whitespace-nowrap leading-tight">
+                                    {node.label.split(' ').slice(0, 1).join(' ')}<br />
+                                    {node.label.split(' ').slice(1).join(' ')}
+                                </span>
                             </motion.div>
                         </div>
                     </motion.div>
@@ -383,7 +386,7 @@ const FeatureCardV2 = ({ feature, index }) => {
                             <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center shadow-xl">
                                 <Zap className="w-4 h-4 text-white" />
                             </div>
-                            <span className="text-xs font-black text-slate-900 uppercase tracking-[0.2em]">Activate Node</span>
+                            <span className="text-xs font-black text-slate-900 uppercase tracking-[0.2em]">Activate Module</span>
                         </motion.div>
 
                         <div className="flex items-center gap-2">
@@ -421,7 +424,7 @@ const FeaturesHero = () => {
                             className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-indigo-50 border border-indigo-100/50 mb-6"
                         >
                             <span className="flex h-2 w-2 rounded-full bg-indigo-600 animate-pulse" />
-                            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-indigo-900/60">Platform Evolution 2.0</span>
+                            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-indigo-900/60">Enterprise Intelligence Platform</span>
                         </motion.div>
 
                         <motion.h1
@@ -430,8 +433,8 @@ const FeaturesHero = () => {
                             transition={{ duration: 0.8 }}
                             className="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 leading-[1.05] tracking-tight mb-6"
                         >
-                            The Edge of <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-500">Autonomous</span><br />
+                            The Future of <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-500">Enterprise</span><br />
                             Intelligence.
                         </motion.h1>
 
@@ -441,7 +444,7 @@ const FeaturesHero = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-lg sm:text-xl text-slate-500 max-w-xl mb-8 leading-relaxed font-medium"
                         >
-                            Move beyond simple automation. Our features don't just follow rules—they learn your business logic to make critical decisions at scale.
+                            TOAI connects enterprise systems, data, and workflows to deliver contextual intelligence and coordinated decision-making at scale.
                         </motion.p>
 
                         <motion.div
@@ -457,14 +460,14 @@ const FeaturesHero = () => {
                                 className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-slate-900 text-white font-black text-sm uppercase tracking-[0.2em] shadow-2xl shadow-slate-900/20 hover:bg-slate-800 transition-colors flex items-center justify-center gap-3"
                             >
                                 <Send className="w-4 h-4" />
-                                Start Deployment
+                                Deploy TOAI
                             </motion.a>
                             <motion.a
                                 href="#features-matrix"
                                 whileHover={{ scale: 1.02 }}
                                 className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-white border border-slate-200 text-slate-900 font-black text-sm uppercase tracking-[0.2em] hover:bg-slate-50 transition-all flex items-center justify-center gap-3"
                             >
-                                Architecture
+                                Platform Architecture
                                 <ArrowRight className="w-4 h-4" />
                             </motion.a>
                         </motion.div>
@@ -524,14 +527,14 @@ const Features = () => {
                         <motion.span
                             className="inline-block px-5 py-2 rounded-full bg-indigo-50 text-indigo-600 text-[10px] font-black uppercase tracking-[0.3em] mb-6"
                         >
-                            Feature Explorer
+                            Platform Capability Explorer
                         </motion.span>
                         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-[1.1]">
-                            Explore Modular <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Intelligence.</span>
+                            Explore Enterprise <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Intelligence Modules.</span>
                         </h2>
                         <p className="text-lg text-slate-500 font-medium leading-relaxed">
-                            Every module is designed to integrate seamlessly into your existing enterprise stack. Use the arrow controls to cycle through nodes.
+                            Each capability integrates directly into your enterprise systems, transforming data, workflows, and decisions into coordinated intelligence.
                         </p>
                     </FadeInSection>
 
@@ -607,38 +610,41 @@ const Features = () => {
             <section className="py-16 lg:py-24 px-6">
                 <div className="container mx-auto max-w-7xl">
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
+                        initial={{ opacity: 0, scale: 0.97 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        className="relative overflow-hidden rounded-[3rem] bg-indigo-600 p-12 sm:p-20 text-center"
+                        className="relative overflow-hidden rounded-[3rem] p-12 sm:p-20 text-center border border-slate-200/80 bg-[#f7f9fc] shadow-[0_18px_45px_rgba(15,23,42,0.06)]"
                     >
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 opacity-30 pointer-events-none" />
-                        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-700 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 opacity-30 pointer-events-none" />
-
                         <div className="relative z-10 max-w-2xl mx-auto">
-                            <h2 className="text-4xl sm:text-5xl font-black text-white mb-8 leading-tight">
-                                Ready to activate your <br />
-                                AI workforce?
+                            <h2 className="text-4xl sm:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                                Ready to deploy <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
+                                    enterprise intelligence?
+                                </span>
                             </h2>
-                            <p className="text-indigo-100 text-lg sm:text-xl font-medium mb-12 opacity-90">
-                                Join 2,000+ forward-thinking enterprises building the future of autonomous work.
+                            <p className="text-slate-600 text-lg sm:text-xl font-medium mb-10">
+                                Organizations worldwide are deploying TOAI to connect systems, automate workflows, and transform enterprise data into coordinated intelligence.
                             </p>
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                                 <motion.a
                                     href="/contact"
                                     whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="px-10 py-5 rounded-2xl bg-white text-indigo-600 font-black text-sm uppercase tracking-[0.2em] shadow-xl"
+                                    whileTap={{ scale: 0.97 }}
+                                    className="px-7 sm:px-8 py-3.5 sm:py-3.5 rounded-[0.875rem] bg-indigo-600 text-white font-black text-sm uppercase tracking-[0.2em] shadow-xl hover:bg-indigo-700 transition-colors"
                                 >
-                                    Get Started
+                                    Deploy TOAI
                                 </motion.a>
                                 <motion.a
                                     href="/about"
                                     whileHover={{ scale: 1.05 }}
-                                    className="px-10 py-5 rounded-2xl bg-indigo-700/50 text-white border border-indigo-400/30 font-black text-sm uppercase tracking-[0.2em] backdrop-blur-md"
+                                    whileTap={{ scale: 0.97 }}
+                                    className="px-7 sm:px-8 py-3.5 sm:py-3.5 rounded-[0.875rem] bg-transparent border border-[#d4d7ec] text-indigo-600 font-black text-sm uppercase tracking-[0.2em] hover:bg-[#eef2ff] transition-colors"
                                 >
-                                    Why Two8AI?
+                                    Explore Platform
                                 </motion.a>
                             </div>
+                            <p className="mt-6 text-xs sm:text-sm font-semibold text-slate-400 tracking-wide">
+                                Enterprise-ready • Secure deployment • Hybrid infrastructure
+                            </p>
                         </div>
                     </motion.div>
                 </div>

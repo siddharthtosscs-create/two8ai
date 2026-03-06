@@ -58,7 +58,7 @@ const HeroSection = () => {
                             <FadeInSection delay={0.1}>
                                 <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-indigo-700 font-semibold text-xs sm:text-sm border border-indigo-100 shadow-sm">
                                     <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
-                                    <span>Enterprise AI Foundation Layer</span>
+                                    <span>Enterprise Intelligence Infrastructure</span>
                                 </div>
                             </FadeInSection>
 
@@ -70,7 +70,7 @@ const HeroSection = () => {
 
                             <FadeInSection delay={0.3}>
                                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
-                                    An AI foundation layer that connects structured and unstructured data across your organization to automate workflows, enhance decision-making, and unify intelligence.
+                                A unified intelligence system that connects data, workflows, and systems across your organization — transforming fragmented information into coordinated action and real-time decision support.
                                 </p>
                             </FadeInSection>
 

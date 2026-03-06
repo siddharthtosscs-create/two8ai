@@ -57,12 +57,12 @@ const ProductHeroVisualizer = () => {
     };
 
     const nodes = [
-        { id: 'sap', icon: Database, label: "SAP / ERP", color: "#6366f1", angle: -150, distance: 150, delay: 0, desc: "Operational data integration", stats: "99.9% Up" },
-        { id: 'crm', icon: Users, label: "Salesforce", color: "#38bdf8", angle: -30, distance: 150, delay: 0.2, desc: "Customer intelligence sync", stats: "Live" },
-        { id: 'pdf', icon: FileText, label: "Physical Docs", color: "#f43f5e", angle: 150, distance: 150, delay: 0.4, desc: "High-precision OCR extraction", stats: "Deep OCR" },
-        { id: 'cloud', icon: Globe, label: "Hybrid Cloud", color: "#10b981", angle: 30, distance: 150, delay: 0.6, desc: "Distributed system bridging", stats: "Encrypted" },
-        { id: 'sql', icon: Table, label: "SQL/NoSQL", color: "#8b5cf6", angle: -90, distance: 130, delay: 0.8, desc: "Structured query bridge", stats: "Indexing" },
-        { id: 'mail', icon: Mail, label: "Communications", color: "#f59e0b", angle: 90, distance: 130, delay: 1, desc: "Email & Chat analysis", stats: "NLP Active" },
+        { id: 'sap', icon: Database, label: "ERP Systems", color: "#6366f1", angle: -150, distance: 150, delay: 0, desc: "Operational Data Integration", stats: "Live Sync" },
+        { id: 'crm', icon: Users, label: "CRM Platforms", color: "#38bdf8", angle: -30, distance: 150, delay: 0.2, desc: "Customer Intelligence Sync", stats: "Real-Time" },
+        { id: 'pdf', icon: FileText, label: "Enterprise Documents", color: "#f43f5e", angle: 150, distance: 150, delay: 0.4, desc: "AI Document Understanding", stats: "Smart Extraction" },
+        { id: 'cloud', icon: Globe, label: "Hybrid Infrastructure", color: "#10b981", angle: 30, distance: 150, delay: 0.6, desc: "Cross-Cloud Data Fabric", stats: "Secure Sync" },
+        { id: 'sql', icon: Table, label: "Enterprise Databases", color: "#8b5cf6", angle: -90, distance: 130, delay: 0.8, desc: "Structured Data Access", stats: "Fast Indexing" },
+        { id: 'mail', icon: Mail, label: "Enterprise Communications", color: "#f59e0b", angle: 90, distance: 130, delay: 1, desc: "Email & Chat Intelligence", stats: "NLP Processing" },
     ];
 
     return (
@@ -353,7 +353,7 @@ const ProductHeroVisualizer = () => {
                                             initial={{ opacity: 0, scale: 0.8, y: node.angle > 0 ? 10 : -10 }}
                                             animate={{ opacity: 1, scale: 1, y: 0 }}
                                             exit={{ opacity: 0, scale: 0.8 }}
-                                            className={`absolute left-1/2 -translate-x-1/2 z-50 pointer-events-none whitespace-nowrap flex flex-col items-center gap-1.5 ${node.angle > 0 ? 'top-full mt-3' : 'bottom-full mb-3'}`}
+                                            className={`absolute left-1/2 -translate-x-1/2 z-50 pointer-events-none flex flex-col items-center gap-1.5 ${node.angle > 0 ? 'top-full mt-3' : 'bottom-full mb-3'}`}
                                         >
                                             <div className="bg-slate-900 border border-indigo-500/30 px-3 py-1.5 rounded-full shadow-2xl flex items-center gap-2 ring-1 ring-white/10">
                                                 <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: node.color }} />
@@ -373,7 +373,7 @@ const ProductHeroVisualizer = () => {
                                             initial={{ opacity: 0, y: 15, x: 10, scale: 0.8 }}
                                             animate={{ opacity: 1, y: 0, x: 0, scale: 1 }}
                                             exit={{ opacity: 0, scale: 0.8 }}
-                                            className={`absolute whitespace-nowrap z-[100] p-5 rounded-3xl bg-slate-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 w-56 ${node.angle > 0 ? 'bottom-full mb-8' : 'top-full mt-8'
+                                            className={`absolute z-[100] p-5 rounded-3xl bg-slate-900 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 w-56 ${node.angle > 0 ? 'bottom-full mb-8' : 'top-full mt-8'
                                                 } ${node.angle === 90 || node.angle === -90 ? 'left-1/2 -translate-x-1/2' : (Math.abs(node.angle) > 90 ? 'left-0' : 'right-0')}`}
                                         >
                                             <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/5">

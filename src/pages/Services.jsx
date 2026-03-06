@@ -36,10 +36,10 @@ const servicePalettes = [
 
 const Services = () => {
     return (
-        <div className="bg-white pt-24 pb-24">
+        <div className="bg-white pt-20 pb-16 md:pt-24 md:pb-20">
             <div className="container mx-auto px-6">
                 {/* Hero Section */}
-                <div className="relative mb-24 lg:mb-32">
+                <div className="relative mb-16 lg:mb-20">
                     {/* Background Decorative Elements */}
                     <div className="absolute top-0 right-0 -mr-24 -mt-24 w-[600px] h-[600px] bg-indigo-50/50 rounded-full blur-[120px] -z-10" />
                     <div className="absolute bottom-0 left-0 -ml-24 -mb-24 w-[500px] h-[500px] bg-slate-50/50 rounded-full blur-[100px] -z-10" />
@@ -61,33 +61,32 @@ const Services = () => {
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                                 </span>
-                                Professional Services
+                                Enterprise Deployment Services
                             </motion.div>
 
-                            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-6 leading-[1.1] tracking-tight">
-                                Turn complex{" "}
+                            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-5 leading-[1.1] tracking-tight">
+                                Turn enterprise{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-500">
-                                    systems into outcomes
+                                    complexity into intelligence
                                 </span>
                             </h1>
 
-                            <p className="text-xl text-slate-600 mb-10 max-w-xl leading-relaxed">
-                                Strategy, implementation, and ongoing AI operations—delivered by specialized
-                                teams who bridge the gap between complex data and business growth.
+                            <p className="text-lg text-slate-600 mb-6 max-w-xl leading-relaxed">
+                                Strategy, deployment, and ongoing AI operations—delivered by specialized teams who integrate TOAI into your systems, workflows, and enterprise data infrastructure.
                             </p>
 
-                            <div className="grid sm:grid-cols-2 gap-6 mb-12">
+                            <div className="grid sm:grid-cols-2 gap-6 mb-8">
                                 {[
                                     {
-                                        title: "End‑to‑end delivery",
-                                        desc: "From discovery and design to deployment and adoption.",
+                                        title: "End‑to‑End Delivery",
+                                        desc: "From architecture design to deployment and enterprise adoption.",
                                         icon: CheckCircle,
                                         color: "text-emerald-500",
                                         bg: "bg-emerald-50/50"
                                     },
                                     {
-                                        title: "Embedded expertise",
-                                        desc: "Cross‑functional teams that plug into your existing stack.",
+                                        title: "Embedded Expertise",
+                                        desc: "Cross-functional AI specialists integrated with your technology stack.",
                                         icon: CheckCircle,
                                         color: "text-indigo-500",
                                         bg: "bg-indigo-50/50"
@@ -126,15 +125,15 @@ const Services = () => {
                                 >
                                     <div className="absolute inset-0 bg-indigo-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
                                     <span className="relative flex items-center gap-2">
-                                        Talk to our team
+                                        Speak with our team
                                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </Link>
                                 <a
                                     href="#services-list"
                                     className="inline-flex items-center justify-center px-8 py-4 rounded-2xl border-2 border-slate-100 text-slate-700 font-bold hover:border-indigo-100 hover:text-indigo-600 hover:bg-indigo-50/30 transition-all shadow-sm"
-                                >
-                                    Explore all services
+                                    >
+                                    View service offerings
                                 </a>
                             </div>
                         </motion.div>
@@ -167,11 +166,11 @@ const Services = () => {
                                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                                             </span>
-                                            How we work
+                                            Delivery Framework
                                         </div>
                                         <div className="h-4 w-[1px] bg-slate-200 hidden sm:block" />
                                         <p className="text-sm font-medium text-slate-600 group-hover:text-slate-900 transition-colors">
-                                            Strategy → Build → Operate. One team, end to end.
+                                            Strategy → Deploy → Operate. One team delivering enterprise intelligence from design to scale.
                                         </p>
                                     </motion.div>
                                 </div>
@@ -188,8 +187,8 @@ const Services = () => {
                                         <Sparkles className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
-                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Global Reach</p>
-                                        <p className="text-xl font-black text-slate-900 leading-tight">100+ AI Teams</p>
+                                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Global Delivery Network</p>
+                                        <p className="text-xl font-black text-slate-900 leading-tight">100+ Implementation Specialists</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -265,7 +264,7 @@ const Services = () => {
                                             <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 hidden sm:block">
                                                 Tailored for{" "}
                                                 <span className="text-slate-900">
-                                                    growth & efficiency
+                                                    {service.tailoredFor || "growth & efficiency"}
                                                 </span>
                                             </div>
                                             <motion.div
@@ -276,7 +275,7 @@ const Services = () => {
                                                     to="/contact"
                                                     className="inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-slate-900 text-slate-50 font-semibold text-sm border border-slate-900/10 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-900 transition-all gap-2 shadow-sm hover:shadow-lg"
                                                 >
-                                                    Get Started
+                                                    Start Service
                                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                                                 </Link>
                                             </motion.div>

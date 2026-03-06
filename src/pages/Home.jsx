@@ -92,11 +92,11 @@ const Home = () => {
                                 </div>
 
                                 <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 mb-4 tracking-tighter leading-tight">
-                                    What is <span className="text-indigo-600">TOAI</span>?
+                                    What Makes <span className="text-indigo-600">TOAI</span> Different?
                                 </h2>
 
                                 <p className="text-xl sm:text-2xl text-slate-600 leading-relaxed mb-4 font-medium">
-                                    TOAI is not a chatbot. It is the <span className="text-slate-900 font-bold">Enterprise AI Foundation Layer</span>—a centralized nervous system that unifies your entire organization's data and software ecosystem.
+                                TOAI is not just another AI assistant. It is the <span className="text-slate-900 font-bold">Enterprise Intelligence Layer</span> — a centralized system that connects your organization’s data, workflows, and software into one coordinated intelligence network.
                                 </p>
                             </FadeInSection>
                         </div>
@@ -121,10 +121,10 @@ const Home = () => {
                     <FadeInSection className="text-center max-w-3xl mx-auto mb-16">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-600 font-black text-xs uppercase tracking-[0.2em] mb-6 border border-indigo-100 shadow-sm">
                             <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse" />
-                            Operational Flow
+                            Enterprise Intelligence Flow
                         </div>
-                        <h2 className="text-4xl sm:text-5xl font-black text-slate-900 mb-6 tracking-tight">How It Works</h2>
-                        <p className="text-lg text-slate-600 font-medium">From chaotic raw data to actionable enterprise intelligence in four seamless steps.</p>
+                        <h2 className="text-4xl sm:text-5xl font-black text-slate-900 mb-6 tracking-tight">How TOAI Operates</h2>
+                        <p className="text-lg text-slate-600 font-medium">From fragmented enterprise data to coordinated, decision-ready intelligence in four structured stages.</p>
                     </FadeInSection>
 
                     <div className="relative max-w-6xl mx-auto">
@@ -135,32 +135,32 @@ const Home = () => {
                             {[
                                 {
                                     step: "01",
-                                    title: "Connect",
-                                    desc: "Ingest data from any enterprise source—ERP, CRM, or document stores.",
+                                    title: "Integrate",
+                                    desc: "Connect data across enterprise systems—ERP, CRM, APIs, and document repositories.",
                                     icon: Database,
                                     color: "from-blue-500 to-indigo-600",
                                     glow: "group-hover:shadow-blue-500/20"
                                 },
                                 {
                                     step: "02",
-                                    title: "Normalize",
-                                    desc: "Unified knowledge structure across all structured and unstructured data.",
+                                    title: "Structure",
+                                    desc: "Organize structured and unstructured data into a unified intelligence framework.",
                                     icon: Network,
                                     color: "from-purple-500 to-indigo-600",
                                     glow: "group-hover:shadow-purple-500/20"
                                 },
                                 {
                                     step: "03",
-                                    title: "Understand",
-                                    desc: "Proprietary TOAI agents extract deep context and semantic relationships.",
+                                    title: "Reason",
+                                    desc: "TOAI’s reasoning engine identifies context, dependencies, and hidden relationships.",
                                     icon: Brain,
                                     color: "from-emerald-500 to-teal-600",
                                     glow: "group-hover:shadow-emerald-500/20"
                                 },
                                 {
                                     step: "04",
-                                    title: "Deliver",
-                                    desc: "Execute smart workflows and power your entire AI ecosystem.",
+                                    title: "Orchestrate",
+                                    desc: "Trigger coordinated workflows and activate intelligence across your enterprise stack.",
                                     icon: CheckCircle,
                                     color: "from-orange-500 to-amber-600",
                                     glow: "group-hover:shadow-orange-500/20"
@@ -229,20 +229,20 @@ const Home = () => {
                             <FadeInSection>
                                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-600 text-white text-[10px] font-black uppercase tracking-widest mb-4">
                                     <Activity className="w-3 h-3" />
-                                    Live Infrastructure Status
+                                    Enterprise Security Architecture
                                 </div>
                                 <h2 className="text-4xl sm:text-5xl font-black text-slate-900 leading-tight mb-6">
-                                    The TOAI <span className="text-indigo-600">Secure</span> Ecosystem
+                                    The TOAI <span className="text-indigo-600">Trust</span> Infrastructure
                                 </h2>
                                 <p className="text-lg text-slate-600 font-medium leading-relaxed mb-8">
-                                    A multi-layered architecture designed to meet the rigorous demands of global financial and healthcare institutions.
+                                    A security-first architecture built to support enterprise intelligence across regulated industries and mission-critical systems.
                                 </p>
 
                                 {/* Mini Dashboard Stats */}
                                 <div className="grid grid-cols-2 gap-4 mb-8">
                                     {[
-                                        { label: "Data Encryption", value: "AES-256", status: "Active" },
-                                        { label: "Compliance", value: "SOC2 / HIPAA", status: "Verified" }
+                                        { label: "Enterprise Encryption", value: "AES-256", status: "Active" },
+                                        { label: "Regulatory Compliance", value: "SOC2 / HIPAA", status: "Verified" }
                                     ].map((stat, i) => (
                                         <div key={i} className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm relative overflow-hidden group">
                                             <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500" />
@@ -322,10 +322,10 @@ const Home = () => {
                                     {/* Orbital Node Cards - Absolute on Desktop, Grid-like on Mobile */}
                                     <div className="absolute inset-0 grid grid-cols-2 gap-4 sm:block pointer-events-none">
                                         {[
-                                            { Icon: Lock, title: "RBAC", pos: "sm:top-10 sm:left-10", color: "bg-blue-500", delay: 0 },
-                                            { Icon: Globe, title: "Hybrid", pos: "sm:top-10 sm:right-10", color: "bg-rose-500", delay: 0.2 },
-                                            { Icon: FileText, title: "Audits", pos: "sm:bottom-10 sm:left-10", color: "bg-emerald-500", delay: 0.4 },
-                                            { Icon: Users, title: "Tenancy", pos: "sm:bottom-10 sm:right-10", color: "bg-amber-500", delay: 0.6 }
+                                            { Icon: Lock, title: "Access Governance", pos: "sm:top-10 sm:left-10", color: "bg-blue-500", delay: 0 },
+                                            { Icon: Globe, title: "Hybrid Deployment", pos: "sm:top-10 sm:right-10", color: "bg-rose-500", delay: 0.2 },
+                                            { Icon: FileText, title: "Audit Monitoring", pos: "sm:bottom-10 sm:left-10", color: "bg-emerald-500", delay: 0.4 },
+                                            { Icon: Users, title: "Tenant Isolation", pos: "sm:bottom-10 sm:right-10", color: "bg-amber-500", delay: 0.6 }
                                         ].map((node, i) => (
                                             <motion.div
                                                 key={i}
@@ -367,7 +367,7 @@ const Home = () => {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <FadeInSection scale className="max-w-4xl mx-auto">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mb-6 sm:mb-8 tracking-tight">
-                            Transform Your Organization with <span className="text-indigo-600">TOAI</span>
+                        Build Enterprise Intelligence with <span className="text-indigo-600">TOAI</span>
                         </h2>
                         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -375,7 +375,7 @@ const Home = () => {
                                     to="/contact"
                                     className="bg-indigo-600 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl text-lg sm:text-xl font-bold shadow-xl shadow-indigo-200 hover:bg-indigo-700 hover:shadow-2xl transition-all inline-block"
                                 >
-                                    Request a Demo Today
+                                    Schedule a Demo
                                 </Link>
                             </motion.div>
                         </div>

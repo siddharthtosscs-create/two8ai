@@ -8,29 +8,77 @@ import StaggerContainer, { StaggerItem } from '../components/animations/StaggerC
 const industries = [
     {
         title: "E-commerce & Retail",
-        desc: "Optimize inventory, personalize customer experiences, and automate support.",
-        specs: ["Demand Forecasting", "Visual Search", "Chatbot Integration"],
+        desc: "Optimize inventory management, personalize customer experiences, and automate retail operations with AI-driven workflows.",
+        detailDesc:
+            "Optimize inventory planning, personalize customer journeys, and automate retail operations through intelligent workflows.",
+        integrationDesc:
+            "TOAI integrates with your existing commerce platforms, data systems, and operational tools so teams can deploy production-ready AI without disrupting existing processes.",
+        specs: ["Demand Forecasting", "Visual Product Search", "Customer Support Automation"],
+        enables: [
+            "Faster experimentation with governed access to retail data.",
+            "Reusable workflows optimized for digital commerce environments.",
+            "Trusted AI operations with clear operational guardrails."
+        ],
+        sectorHeading: "See how TOAI drives intelligence across retail operations.",
+        sectorBody:
+            "From pilot deployment to scaled rollout, we collaborate with your teams to design and operationalize AI workflows.",
         icon: ShoppingCart,
         color: "bg-rose-100 text-rose-600"
     },
     {
         title: "AI Companies / Tech Firms",
-        desc: "Accelerate development cycles and manage complex data pipelines.",
-        specs: ["Model Training Data", "Automated QA", "Infrastructure Optimization"],
+        desc: "Accelerate product development, manage complex data pipelines, and scale AI-driven engineering workflows.",
+        detailDesc:
+            "Accelerate product development, manage complex data pipelines, and scale AI-driven engineering workflows.",
+        integrationDesc:
+            "TOAI integrates with development environments, infrastructure systems, and engineering data so teams can deploy production-grade AI workflows seamlessly.",
+        specs: ["Model Training Data Pipelines", "Automated Quality Assurance", "Infrastructure Optimization"],
+        enables: [
+            "Faster experimentation with secure data access.",
+            "Reusable workflows optimized for AI and technology teams.",
+            "Governance frameworks that ensure reliable AI development."
+        ],
+        sectorHeading: "See how TOAI powers intelligence across technology organizations.",
+        sectorBody:
+            "From initial experimentation to scaled infrastructure deployment, we co-develop AI solutions alongside engineering teams.",
         icon: Server,
         color: "bg-indigo-100 text-indigo-600"
     },
     {
         title: "Government Bodies",
-        desc: "Enhance citizen services, ensure compliance, and streamline bureaucracy.",
-        specs: ["Document Processing", "Public Service Bots", "Secure Data Management"],
+        desc: "Improve public services, maintain regulatory compliance, and streamline administrative processes.",
+        detailDesc:
+            "Improve public service delivery, maintain regulatory compliance, and streamline administrative operations.",
+        integrationDesc:
+            "TOAI integrates with existing government systems and data platforms so agencies can deploy secure AI workflows without disrupting established processes.",
+        specs: ["Document Processing Automation", "Citizen Service Bots", "Secure Data Management"],
+        enables: [
+            "Faster innovation with secure and compliant data access.",
+            "Reusable workflows tailored for government operations.",
+            "Trusted AI systems with strong governance controls."
+        ],
+        sectorHeading: "See how TOAI enhances intelligence across public sector operations.",
+        sectorBody:
+            "From pilot programs to nationwide deployment, we co-design AI solutions with government teams.",
         icon: Building2,
         color: "bg-slate-100 text-slate-600"
     },
     {
         title: "Enterprises",
-        desc: "Unify operations across global offices and disparate legacy systems.",
-        specs: ["Knowledge Management", "Cross-Department Workflows", "Legacy Integration"],
+        desc: "Connect global operations, unify legacy systems, and coordinate workflows across enterprise teams.",
+        detailDesc:
+            "Connect global operations, unify legacy systems, and coordinate workflows across enterprise teams.",
+        integrationDesc:
+            "TOAI integrates with existing enterprise software, data systems, and operational platforms to enable scalable intelligence across the organization.",
+        specs: ["Enterprise Knowledge Management", "Cross-Department Workflow Automation", "Legacy System Integration"],
+        enables: [
+            "Faster experimentation with governed enterprise data access.",
+            "Reusable intelligence workflows across departments.",
+            "Reliable AI systems with clear operational guardrails."
+        ],
+        sectorHeading: "See how TOAI enables intelligence across enterprise environments.",
+        sectorBody:
+            "From initial deployment to organization-wide scale, we work with teams to design and implement AI workflows.",
         icon: Globe,
         color: "bg-emerald-100 text-emerald-600"
     }
@@ -50,17 +98,16 @@ const Industries = () => {
                     <FadeInSection className="space-y-8">
                         <div className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50/60 px-4 py-1 text-sm font-medium text-indigo-700 shadow-sm">
                             <Sparkles className="w-4 h-4" />
-                            <span>Industry-ready AI orchestration</span>
+                            <span>Industry-Ready Enterprise Intelligence</span>
                         </div>
 
                         <div>
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-4">
-                                AI that understands{" "}
+                                Intelligence built for{" "}
                                 <span className="text-indigo-600">your industry</span>.
                             </h1>
                             <p className="text-lg sm:text-xl text-slate-600 max-w-xl">
-                                TOAI plugs into your tools, data, and workflows so every team
-                                – from retail to government – can deploy AI that actually ships value.
+                                TOAI integrates with your systems, data, and workflows so organizations across industries—from retail to government—can deploy enterprise intelligence that delivers real operational outcomes.
                             </p>
                         </div>
 
@@ -69,25 +116,25 @@ const Industries = () => {
                                 to="/contact"
                                 className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 hover:bg-indigo-700 transition-colors"
                             >
-                                Talk to our experts
+                                Speak with our experts
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link
                                 to="/solutions"
                                 className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:border-indigo-200 hover:text-indigo-700 transition-colors"
                             >
-                                Explore solutions
+                                Explore industry solutions
                             </Link>
                         </div>
 
                         <div className="flex flex-wrap gap-6 text-sm text-slate-500">
                             <div className="space-y-1">
-                                <p className="font-semibold text-slate-800">4+ industries</p>
-                                <p>Pre-built playbooks and workflows</p>
+                                <p className="font-semibold text-slate-800">Multiple industries supported</p>
+                                <p>Pre-built industry playbooks</p>
                             </div>
                             <div className="space-y-1">
                                 <p className="font-semibold text-slate-800">Weeks, not months</p>
-                                <p>From pilot to production</p>
+                                <p>From pilot to full deployment</p>
                             </div>
                         </div>
                     </FadeInSection>
@@ -106,10 +153,10 @@ const Industries = () => {
                                 <div className="flex items-center justify-between mb-6">
                                     <div>
                                         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                                            Industry overview
+                                            Industry Deployment Overview
                                         </p>
                                         <p className="text-sm text-slate-500">
-                                            Where TOAI is deployed today
+                                            Industries currently deploying TOAI
                                         </p>
                                     </div>
                                     <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
@@ -143,9 +190,9 @@ const Industries = () => {
 
                                 <div className="flex items-center justify-between border-t border-slate-100 pt-4">
                                     <div className="space-y-1">
-                                        <p className="text-xs text-slate-500">Deploy once, reuse everywhere</p>
+                                        <p className="text-xs text-slate-500">Deploy once. Scale across industries.</p>
                                         <p className="text-sm font-semibold text-slate-900">
-                                            Unified orchestration layer
+                                            Unified enterprise intelligence layer
                                         </p>
                                     </div>
                                     <div className="flex -space-x-2">
@@ -153,7 +200,7 @@ const Industries = () => {
                                             AI
                                         </span>
                                         <span className="w-8 h-8 rounded-full bg-rose-100 border border-white flex items-center justify-center text-[11px] font-semibold text-rose-700">
-                                            Ops
+                                            Operations
                                         </span>
                                         <span className="w-8 h-8 rounded-full bg-sky-100 border border-white flex items-center justify-center text-[11px] font-semibold text-sky-700">
                                             IT
@@ -169,13 +216,26 @@ const Industries = () => {
                 <FadeInSection className="max-w-4xl mx-auto mb-10 text-center">
                     <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50/80 border border-indigo-100 px-4 py-1 text-xs font-semibold tracking-[0.16em] uppercase text-indigo-700 mb-5">
                         <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                        <span>Transforming industries with TOAI</span>
+                        <span>Transforming Industries with TOAI</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                         Transforming <span className="text-indigo-600">Industries</span>
                     </h2>
                     <p className="text-base md:text-lg text-slate-600">
-                        See how TOAI delivers value across different sectors.
+                        See how TOAI delivers operational intelligence across key industries.
+                    </p>
+                </FadeInSection>
+
+                {/* Optional micro-section: Industry Blueprints intro */}
+                <FadeInSection className="max-w-3xl mx-auto mb-8 text-center">
+                    <h3 className="text-sm font-semibold tracking-[0.18em] uppercase text-indigo-700 mb-2">
+                        Industry Blueprints
+                    </h3>
+                    <p className="text-sm md:text-base text-slate-600">
+                        Pre-built intelligence frameworks designed for real-world industry workflows.
+                    </p>
+                    <p className="text-sm md:text-base text-slate-600 mt-1">
+                        Each blueprint combines TOAI&apos;s orchestration layer with domain-specific use cases to accelerate deployment.
                     </p>
                 </FadeInSection>
 
@@ -262,8 +322,7 @@ const Industries = () => {
                             </div>
 
                             <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
-                                {activeIndustry.desc} TOAI plugs into your existing tools and data so teams can ship
-                                production-ready AI workflows without changing how they already work.
+                                {activeIndustry.detailDesc} {activeIndustry.integrationDesc}
                             </p>
 
                             <div className="grid gap-6 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-start">
@@ -288,18 +347,12 @@ const Industries = () => {
                                         What this enables
                                     </p>
                                     <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
-                                        <li className="flex gap-2">
-                                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400" />
-                                            <span>Faster experimentation with safe access to the right data.</span>
-                                        </li>
-                                        <li className="flex gap-2">
-                                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                                            <span>Reusable flows tuned for {activeIndustry.title.toLowerCase()}.</span>
-                                        </li>
-                                        <li className="flex gap-2">
-                                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400" />
-                                            <span>Clear guardrails so teams can trust AI in day‑to‑day work.</span>
-                                        </li>
+                                        {activeIndustry.enables.map((item, idx) => (
+                                            <li key={idx} className="flex gap-2">
+                                                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-indigo-400" />
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -307,11 +360,10 @@ const Industries = () => {
                             <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-100">
                                 <div className="text-xs sm:text-sm text-slate-500 max-w-xs">
                                     <p className="font-semibold text-slate-800 mb-1">
-                                        See how TOAI delivers value across this sector.
+                                        {activeIndustry.sectorHeading}
                                     </p>
                                     <p>
-                                        From first pilot to scaled roll-out, we co-design and iterate on AI use cases
-                                        with your teams.
+                                        {activeIndustry.sectorBody}
                                     </p>
                                 </div>
                                 <Link

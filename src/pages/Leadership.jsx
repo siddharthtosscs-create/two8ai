@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { leadership, advisoryBoard } from '../data/content';
-import { Linkedin, Twitter } from 'lucide-react';
 import FadeInSection from '../components/animations/FadeInSection';
 import StaggerContainer, { StaggerItem } from '../components/animations/StaggerContainer';
 
@@ -40,12 +39,6 @@ const Leadership = () => {
                                             {leader.name.charAt(0)}
                                         </div>
                                     )}
-                                    <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-slate-900/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                        <div className="flex gap-4 justify-center text-white">
-                                            <motion.div whileHover={{ scale: 1.2, color: '#818cf8' }}><Linkedin className="w-5 h-5 cursor-pointer" /></motion.div>
-                                            <motion.div whileHover={{ scale: 1.2, color: '#818cf8' }}><Twitter className="w-5 h-5 cursor-pointer" /></motion.div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">{leader.name}</h3>
                                 <p className="text-indigo-600 font-medium text-sm mb-2">{leader.role}</p>
@@ -72,12 +65,6 @@ const Leadership = () => {
                                 <div className="relative overflow-hidden rounded-2xl mb-6 bg-slate-100 aspect-[3/4] shadow-md group-hover:shadow-xl transition-all">
                                     <div className="absolute inset-0 bg-gradient-to-tr from-indigo-200 to-slate-100 flex items-center justify-center text-slate-300 text-6xl font-black opacity-30">
                                         {advisor.name.charAt(0)}
-                                    </div>
-                                    <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-slate-900/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                        <div className="flex gap-4 justify-center text-white">
-                                            <motion.div whileHover={{ scale: 1.2, color: '#818cf8' }}><Linkedin className="w-5 h-5 cursor-pointer" /></motion.div>
-                                            <motion.div whileHover={{ scale: 1.2, color: '#818cf8' }}><Twitter className="w-5 h-5 cursor-pointer" /></motion.div>
-                                        </div>
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">{advisor.name}</h3>

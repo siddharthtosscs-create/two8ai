@@ -19,53 +19,53 @@ const EnterpriseEngine = () => {
     const modules = [
         {
             id: 'unify',
-            title: 'Unified Knowledge',
+            title: 'Connected Knowledge',
             icon: Database,
             color: 'from-blue-600 to-indigo-600',
-            stats: '100% Connectivity',
-            desc: 'Connects to SAP, Oracle, and legacy systems into a single source of truth.',
+            stats: 'Full-System Connectivity',
+            desc: 'Integrates ERP, CRM, and legacy platforms into a unified intelligence backbone.',
             grid: 'md:col-span-8 md:row-span-1',
-            details: ['Multi-source Sync', 'Live Ingestion', 'Knowledge Graph']
+            details: ['Cross-System Sync', 'Live Data Streams', 'Context Mapping']
         },
         {
             id: 'process',
-            title: 'Holographic OCR',
+            title: 'Intelligent Document AI',
             icon: FileText,
             color: 'from-rose-500 to-orange-600',
-            stats: '99.9% Accuracy',
-            desc: 'Turns complex PDFs into data.',
+            stats: 'High-Precision Processing',
+            desc: 'Converts unstructured documents into structured, usable intelligence.',
             grid: 'md:col-span-4 md:row-span-1',
-            details: ['Handwritten Notes', 'Forms']
+            details: ['Document Parsing', 'Data Extraction']
         },
         {
             id: 'security',
-            title: 'Enterprise Trust',
+            title: 'Enterprise-Grade Security',
             icon: ShieldCheck,
             color: 'from-emerald-500 to-teal-600',
-            stats: 'Banking-Grade',
-            desc: 'Secure hybrid deployment.',
+            stats: 'Enterprise Certified',
+            desc: 'Built for secure, compliant hybrid environments.',
             grid: 'md:col-span-4 md:row-span-1',
-            details: ['Audit Logs', 'RBAC']
+            details: ['Audit Trails', 'Access Control']
         },
         {
             id: 'core',
-            title: 'TOAI CORE',
+            title: 'TOAI Intelligence Core',
             icon: Brain,
             color: 'from-indigo-600 to-purple-700',
-            stats: 'Neural Engine',
-            desc: 'The central intelligence system.',
+            stats: 'Cognitive Engine',
+            desc: 'The reasoning engine powering enterprise-wide decisions.',
             grid: 'md:col-span-4 md:row-span-1',
-            details: ['Reasoning Agents', 'NLP']
+            details: ['AI Reasoning', 'Language Engine']
         },
         {
             id: 'action',
-            title: 'Smart Automation',
+            title: 'Adaptive Automation',
             icon: Zap,
             color: 'from-amber-500 to-yellow-600',
-            stats: 'Real-time',
-            desc: 'Trigger workflows across apps.',
+            stats: 'Real-Time Intelligence',
+            desc: 'Orchestrates workflows across systems in real time.',
             grid: 'md:col-span-4 md:row-span-1',
-            details: ['API Trigger', 'Webhooks']
+            details: ['API Actions', 'Event Triggers']
         }
     ];
 

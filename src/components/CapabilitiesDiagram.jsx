@@ -48,11 +48,10 @@ const IconMap = {
 // --- CREATIVE VISUALS FOR EACH CATEGORY ---
 
 const MetricsDashboard = ({ title, textColor }) => {
-    // Stable pseudo-random stats based on title
-    const seed = title?.length || 0;
-    const efficiency = 92 + (seed % 7);
-    const latency = 110 + (seed % 60);
-    const uptime = 99.9 + (seed % 10) / 100;
+    // Clean, realistic metrics shared across cards
+    const efficiency = 92;
+    const latency = 140;
+    const uptime = 99.99;
 
     return (
         <div className="w-full h-full p-8 flex flex-col justify-between relative overflow-hidden">
@@ -72,7 +71,7 @@ const MetricsDashboard = ({ title, textColor }) => {
                         </div>
                         <div className="space-y-1">
                             <div className="text-[8px] font-black text-white/30 uppercase tracking-widest">Uptime</div>
-                            <div className="text-base font-bold text-white/90">{uptime}%</div>
+                            <div className="text-base font-bold text-white/90">{uptime.toFixed(2)}%</div>
                         </div>
                     </div>
                 </div>
@@ -328,13 +327,13 @@ const CapabilitiesDiagram = () => {
                 <div className="max-w-2xl">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-600 font-bold text-[10px] uppercase tracking-[0.2em] mb-6 border border-indigo-100">
                         <Sparkles className="w-3 h-3" />
-                        Next-Gen Intelligence
+                        Enterprise Intelligence Stack
                     </div>
                     <h2 className="text-5xl sm:text-7xl font-black text-slate-900 tracking-tight leading-[0.85] mb-4">
-                        Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-indigo-400">Capabilities</span>
+                        Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-500 to-indigo-400">Intelligence Capabilities</span>
                     </h2>
                     <p className="text-slate-500 text-lg font-medium max-w-xl">
-                        A unified AI foundation layer designed to transform petabytes of raw data into autonomous organizational wisdom.
+                        A unified intelligence layer engineered to convert fragmented enterprise data into coordinated, decision-ready intelligence.
                     </p>
                 </div>
             </div>
@@ -365,7 +364,13 @@ const CapabilitiesDiagram = () => {
                                             <cap.IconComponent className={`w-6 h-6 text-white`} />
                                         </div>
                                         <h4 className={`text-base font-black tracking-tighter text-white uppercase`}>
-                                            toai <span className="opacity-60">{cap.category}</span>
+                                            {cap.id === 1 ? (
+                                                <span>TOAI Intelligence Layer</span>
+                                            ) : (
+                                                <>
+                                                    toai <span className="opacity-60">{cap.category}</span>
+                                                </>
+                                            )}
                                         </h4>
                                     </div>
                                     <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center bg-white/10 backdrop-blur-md">

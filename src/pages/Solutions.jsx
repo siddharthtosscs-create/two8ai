@@ -7,61 +7,61 @@ import FadeInSection from '../components/animations/FadeInSection';
 import SolutionsHeroVisualizer from '../components/SolutionsHeroVisualizer';
 import ToaiEcosystemDoc from '../assets/docs/The_TWO8_TOAI_Ecosystem.pdf';
 
-const categories = ["Core Ops", "Growth", "Experience"];
+const categories = ["Core Operations", "Growth", "Experience"];
 
 const solutions = [
     {
-        title: "Marketing",
+        title: "Marketing Intelligence",
         category: "Growth",
-        desc: "Manage campaigns, automate content creation, and track creative assets in one place.",
+        desc: "Plan campaigns, generate content, and manage creative assets through a unified marketing intelligence workflow.",
         icon: Megaphone,
-        benefits: ["Auto-generate copy", "Campaign tracking", "Asset management"],
-        stats: "3x Faster Content",
+        benefits: ["AI-generated campaign copy", "Campaign performance tracking", "Creative asset management"],
+        stats: "3× Faster Campaign Production",
         color: "violet"
     },
     {
-        title: "Project Management",
-        category: "Core Ops",
-        desc: "Plan, track, and deliver your team's best work with AI-assisted scheduling and risk prediction.",
+        title: "Project Operations",
+        category: "Core Operations",
+        desc: "Plan, coordinate, and deliver projects with AI-assisted scheduling and predictive operational insights.",
         icon: Calendar,
-        benefits: ["Predictive timelines", "Resource allocation", "Automated updates"],
-        stats: "Zero Missed Deadlines",
+        benefits: ["Predictive project timelines", "Intelligent resource allocation", "Automated progress updates"],
+        stats: "Predictive Delivery Insights",
         color: "sky"
     },
     {
-        title: "Software Development",
-        category: "Core Ops",
-        desc: "Build better products faster with AI-augmented coding, testing, and deployment workflows.",
+        title: "Development Intelligence",
+        category: "Core Operations",
+        desc: "Accelerate product development with AI-assisted coding, testing, and continuous deployment workflows.",
         icon: Terminal,
-        benefits: ["Code review automation", "Bug prediction", "Release management"],
-        stats: "90% Bug Reduction",
+        benefits: ["Automated code reviews", "Predictive bug detection", "Continuous deployment workflows"],
+        stats: "90% Faster Issue Detection",
         color: "emerald"
     },
     {
-        title: "Human Resources",
+        title: "Workforce Intelligence",
         category: "Experience",
-        desc: "Streamline recruitment, onboarding, and employee engagement with intelligent automation.",
+        desc: "Streamline recruitment, onboarding, and employee engagement through intelligent HR automation.",
         icon: Users,
-        benefits: ["Resume screening", "Onboarding bots", "Employee surveys"],
-        stats: "50% Faster Hiring",
+        benefits: ["AI resume screening", "Automated onboarding flows", "Employee engagement analytics"],
+        stats: "50% Faster Talent Acquisition",
         color: "fuchsia"
     },
     {
-        title: "Sales & CRM",
+        title: "Sales Intelligence",
         category: "Growth",
-        desc: "Close more deals with predictive lead scoring and automated follow-ups.",
+        desc: "Increase deal velocity with predictive lead scoring and automated sales engagement workflows.",
         icon: Layout,
-        benefits: ["Lead scoring", "Email automation", "Pipeline analytics"],
-        stats: "2x Deal Velocity",
+        benefits: ["Predictive lead scoring", "Automated outreach sequences", "Pipeline performance analytics"],
+        stats: "2× Sales Pipeline Velocity",
         color: "amber"
     },
     {
-        title: "IT Operations",
-        category: "Core Ops",
-        desc: "Monitor infrastructure, resolve incidents, and manage assets with proactive AI.",
+        title: "IT Operations Intelligence",
+        category: "Core Operations",
+        desc: "Monitor infrastructure, resolve incidents, and maintain system health with proactive operational intelligence.",
         icon: Code,
-        benefits: ["Incident response", "Asset tracking", "Compliance monitoring"],
-        stats: "Self-healing Infra",
+        benefits: ["Intelligent incident response", "Infrastructure asset tracking", "Compliance monitoring"],
+        stats: "Autonomous Infrastructure Monitoring",
         color: "rose"
     }
 ];
@@ -126,16 +126,16 @@ const Solutions = () => {
                                     <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900 text-white font-bold text-[10px] sm:text-xs mb-6 shadow-2xl shadow-indigo-500/20 tracking-[0.2em] uppercase border border-white/10 group cursor-default">
                                         <div className="w-2 h-2 rounded-full bg-indigo-500 animate-ping" />
                                         <Sparkles className="w-4 h-4 text-indigo-400 group-hover:rotate-12 transition-transform" />
-                                        <span>Solutions for Every Team</span>
+                                        <span>Enterprise Solutions by Team</span>
                                     </div>
                                 </StaggerItem>
 
                                 <StaggerItem>
                                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-4 tracking-tighter text-slate-900 leading-[0.95] perspective-1000">
-                                        Tailored for <br />
+                                        Intelligence for <br />
                                         <span className="relative inline-block mt-1">
                                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-600 to-sky-500 drop-shadow-sm">
-                                                Your Workflow
+                                                Every Workflow
                                             </span>
                                         </span>
                                     </h1>
@@ -143,7 +143,7 @@ const Solutions = () => {
 
                                 <StaggerItem>
                                     <p className="text-base sm:text-lg text-slate-600 mb-6 leading-relaxed font-medium max-w-xl mx-auto lg:mx-0">
-                                        See how TOAI adapts to the <span className="text-indigo-600 font-black border-b-2 border-indigo-100">unique needs</span> of different departments. Manage campaigns, automate workflows, and scale intelligence across your organization.
+                                        See how TOAI connects teams, systems, and workflows across departments—transforming operational data into coordinated enterprise intelligence.
                                     </p>
                                 </StaggerItem>
 
@@ -151,7 +151,7 @@ const Solutions = () => {
                                     <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
                                         <motion.div whileHover={{ scale: 1.05, y: -5 }} whileTap={{ scale: 0.95 }}>
                                             <Link to="/contact" className="group flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3.5 rounded-[1.5rem] font-black text-base transition-all shadow-2xl shadow-indigo-500/30">
-                                                Request Demo
+                                                Schedule Demo
                                                 <div className="bg-white/20 p-1 rounded-full group-hover:translate-x-1 transition-transform">
                                                     <ArrowRight className="w-5 h-5" />
                                                 </div>
@@ -164,7 +164,7 @@ const Solutions = () => {
                                                 className="flex items-center justify-center gap-3 bg-white border-2 border-slate-100 text-slate-900 hover:border-indigo-600 hover:text-indigo-600 px-8 py-3.5 rounded-[1.5rem] font-bold text-base transition-all shadow-xl shadow-slate-200/50"
                                             >
                                                 <Command className="w-5 h-5 opacity-60" />
-                                                Docs
+                                                Platform Docs
                                             </button>
                                         </motion.div>
                                     </div>
@@ -180,7 +180,7 @@ const Solutions = () => {
                                 className="absolute top-6 right-0 z-40 bg-white/5 backdrop-blur-md border border-indigo-500/10 p-3 rounded-2xl shadow-2xl hidden md:flex items-center gap-3"
                             >
                                 <MousePointer2 className="w-4 h-4 text-indigo-500" />
-                                <span className="text-[10px] font-black text-indigo-500 uppercase tracking-widest">Hover to explore departments</span>
+                                <span className="text-[10px] font-black text-indigo-500 uppercase tracking-widest">Hover to explore team solutions</span>
                             </motion.div>
 
                             <FadeInSection delay={0.6} direction="none" scale>
@@ -251,13 +251,13 @@ const Solutions = () => {
                         <FadeInSection>
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-bold uppercase tracking-widest mb-4">
                                 <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
-                                Specialized Engines
+                                Enterprise Intelligence Modules
                             </div>
                             <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">
-                                One API. <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Infinite Impact.</span>
+                                One Intelligence Layer. <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Infinite Impact.</span>
                             </h2>
                             <p className="text-slate-500 font-medium max-w-xl mx-auto">
-                                Across every functional unit, TOAI delivers purpose-built modules designed to solve your most complex operational challenges.
+                                Across every department, TOAI provides intelligence modules that connect workflows, automate operations, and transform enterprise data into coordinated decision-making.
                             </p>
                         </FadeInSection>
 

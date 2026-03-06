@@ -21,22 +21,22 @@ const C = {
 
 /* ─── Data sources ─── */
 const STRUCTURED = [
-    { id: 'sap', name: 'SAP', type: 'ERP', icon: Database, color: 'indigo', desc: 'Enterprise resource planning sync' },
-    { id: 'oracle', name: 'Oracle', type: 'Database', icon: Database, color: 'violet', desc: 'Relational database connector' },
-    { id: 'salesforce', name: 'Salesforce', type: 'CRM', icon: Zap, color: 'blue', desc: 'Customer relationship data' },
-    { id: 'sql', name: 'SQL/NoSQL', type: 'DB Engine', icon: Database, color: 'cyan', desc: 'Universal database driver' },
-    { id: 'excel', name: 'Excel', type: 'Sheets', icon: FileText, color: 'emerald', desc: 'Spreadsheet auto-ingestion' },
-    { id: 'hrms', name: 'HRMS', type: 'HR System', icon: Globe, color: 'amber', desc: 'Human resource data pipeline' },
-    { id: 'inventory', name: 'Inventory', type: 'SCM', icon: Activity, color: 'orange', desc: 'Supply chain live tracking' },
+    { id: 'sap', name: 'SAP', type: 'ERP', icon: Database, color: 'indigo', desc: 'Enterprise ERP data integration' },
+    { id: 'oracle', name: 'Oracle', type: 'Database', icon: Database, color: 'violet', desc: 'Enterprise relational database integration' },
+    { id: 'salesforce', name: 'Salesforce', type: 'CRM', icon: Zap, color: 'blue', desc: 'Customer relationship intelligence pipeline' },
+    { id: 'sql', name: 'SQL/NoSQL', type: 'DB Engine', icon: Database, color: 'cyan', desc: 'Structured and distributed database access layer' },
+    { id: 'excel', name: 'Excel', type: 'Sheets', icon: FileText, color: 'emerald', desc: 'Automated spreadsheet data ingestion' },
+    { id: 'hrms', name: 'HRMS', type: 'HR System', icon: Globe, color: 'amber', desc: 'Workforce and HR data integration' },
+    { id: 'inventory', name: 'Inventory', type: 'SCM', icon: Activity, color: 'orange', desc: 'Supply chain and inventory intelligence' },
 ];
 
 const UNSTRUCTURED = [
-    { id: 'pdfs', name: 'PDFs', type: 'OCR', icon: FileText, color: 'rose', desc: 'Intelligent PDF parsing' },
-    { id: 'scans', name: 'Scanned Files', type: 'Vision', icon: FileText, color: 'pink', desc: 'Scanned document OCR' },
-    { id: 'emails', name: 'Emails', type: 'NLP', icon: Globe, color: 'sky', desc: 'Email content extraction' },
-    { id: 'whatsapp', name: 'WhatsApp', type: 'Chat', icon: Zap, color: 'green', desc: 'Encrypted chat ingestion' },
-    { id: 'ocr', name: 'OCR Images', type: 'AI Vision', icon: Activity, color: 'fuchsia', desc: 'Image-to-text recognition' },
-    { id: 'videos', name: 'Videos', type: 'Media', icon: Globe, color: 'purple', desc: 'Frame-level video analysis' },
+    { id: 'pdfs', name: 'PDFs', type: 'OCR', icon: FileText, color: 'rose', desc: 'Document intelligence extraction' },
+    { id: 'scans', name: 'Scanned Files', type: 'Vision', icon: FileText, color: 'pink', desc: 'Vision-based document processing' },
+    { id: 'emails', name: 'Emails', type: 'NLP', icon: Globe, color: 'sky', desc: 'Communication data analysis' },
+    { id: 'whatsapp', name: 'WhatsApp', type: 'Chat', icon: Zap, color: 'green', desc: 'Messaging interaction intelligence' },
+    { id: 'ocr', name: 'OCR Images', type: 'AI Vision', icon: Activity, color: 'fuchsia', desc: 'Image-to-data extraction pipeline' },
+    { id: 'videos', name: 'Videos', type: 'Media', icon: Globe, color: 'purple', desc: 'Multimedia content intelligence' },
 ];
 
 /* ─── Position calculator ─── */
@@ -120,7 +120,7 @@ const DataConstellationHub = () => {
                         style={{ background: C.indigo.light, borderColor: 'rgba(99,102,241,0.2)' }}
                     >
                         <Database className="w-3 h-3 sm:w-3.5 sm:h-3.5" style={{ color: C.indigo.hex }} />
-                        <span className="text-[8px] sm:text-[10px] font-mono uppercase tracking-[0.25em] sm:tracking-[0.3em]" style={{ color: C.indigo.hex }}>Universal Adaptability</span>
+                        <span className="text-[8px] sm:text-[10px] font-mono uppercase tracking-[0.25em] sm:tracking-[0.3em]" style={{ color: C.indigo.hex }}>Enterprise Connectivity</span>
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 16 }}
@@ -130,7 +130,7 @@ const DataConstellationHub = () => {
                         className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-4 tracking-tight"
                     >
                         Zero-Silo{' '}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600">Infrastructure</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600">Intelligence Infrastructure</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0 }}
@@ -139,7 +139,7 @@ const DataConstellationHub = () => {
                         transition={{ delay: 0.15 }}
                         className="text-xs sm:text-base text-slate-500 max-w-lg mx-auto"
                     >
-                        Click any node to explore how TOAI connects every data source into one unified intelligence layer.
+                        Explore how TOAI connects enterprise systems, data platforms, and communication channels into one unified intelligence layer.
                     </motion.p>
                 </div>
 
@@ -247,7 +247,7 @@ const DataConstellationHub = () => {
                                         <Sparkles className="w-5 h-5 sm:w-8 sm:h-8 text-white drop-shadow-sm" />
                                     </div>
                                     <div className="absolute -bottom-5 sm:-bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-center">
-                                        <div className="text-[8px] sm:text-[10px] font-black text-slate-800 uppercase tracking-tight">TOAI Core</div>
+                                        <div className="text-[8px] sm:text-[10px] font-black text-slate-800 uppercase tracking-tight">TOAI Intelligence Core</div>
                                     </div>
                                 </motion.div>
                             </div>
@@ -433,7 +433,7 @@ const DataConstellationHub = () => {
                                 exit={{ opacity: 0 }}
                                 className="text-center py-4 sm:py-6"
                             >
-                                <p className="text-xs sm:text-sm text-slate-400 mb-1">Tap any node to explore its connection pipeline</p>
+                                <p className="text-xs sm:text-sm text-slate-400 mb-1">Select any node to explore its integration pipeline</p>
                                 {!isMobile && <p className="text-[10px] text-slate-400/80">Press <kbd className="px-1.5 py-0.5 rounded bg-slate-100 font-mono">Esc</kbd> to close</p>}
                             </motion.div>
                         )}
@@ -443,10 +443,10 @@ const DataConstellationHub = () => {
                 {/* ── Bottom Stats ── */}
                 <div className="max-w-2xl mx-auto mt-4 sm:mt-8 flex flex-wrap justify-center gap-x-6 sm:gap-x-8 gap-y-2 sm:gap-y-3">
                     {[
-                        { label: 'Data Sources', value: '13+' },
-                        { label: 'Processing', value: 'Real-time' },
+                        { label: 'Connected Systems', value: '13+' },
+                        { label: 'Data Processing', value: 'Real-time' },
                         { label: 'Accuracy', value: '99.7%' },
-                        { label: 'Deployment', value: 'On-Prem Ready' },
+                        { label: 'Deployment', value: 'Hybrid / On-Prem Ready' },
                     ].map((s, i) => (
                         <motion.div key={i} initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }} transition={{ delay: 0.6 + i * 0.1 }}

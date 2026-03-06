@@ -64,16 +64,16 @@ const Product = () => {
                                     <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900 text-white font-bold text-[10px] sm:text-xs mb-6 shadow-2xl shadow-indigo-500/20 tracking-[0.2em] uppercase border border-white/10 group cursor-default">
                                         <div className="w-2 h-2 rounded-full bg-indigo-500 animate-ping" />
                                         <Sparkles className="w-4 h-4 text-indigo-400 group-hover:rotate-12 transition-transform" />
-                                        <span>Evolution of Enterprise AI</span>
+                                        <span>Enterprise Intelligence Infrastructure</span>
                                     </div>
                                 </StaggerItem>
 
                                 <StaggerItem>
                                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-4 tracking-tighter text-slate-900 leading-[0.95] perspective-1000">
-                                        Unified <br />
+                                        Enterprise <br />
                                         <span className="relative inline-block mt-1">
                                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-blue-600 to-sky-500 drop-shadow-sm">
-                                                Knowledge
+                                                Intelligence
                                             </span>
                                             <br />
                                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
@@ -85,7 +85,7 @@ const Product = () => {
 
                                 <StaggerItem>
                                     <p className="text-base sm:text-lg text-slate-600 mb-6 leading-relaxed font-medium max-w-xl mx-auto lg:mx-0">
-                                        Synthesize and search across <span className="text-indigo-600 font-black border-b-2 border-indigo-100">every legacy silo</span> within minutes. TOAI is the neural fabric that connects your ERP, CRM, and documents into a living intelligence layer.
+                                        Unify and activate enterprise data across <span className="text-indigo-600 font-black border-b-2 border-indigo-100">every legacy system</span> within minutes. TOAI connects ERP, CRM, databases, and documents into a unified enterprise intelligence layer.
                                     </p>
                                 </StaggerItem>
 
@@ -96,7 +96,7 @@ const Product = () => {
                                             whileTap={{ scale: 0.95 }}
                                         >
                                             <Link to="/contact" className="group flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3.5 rounded-[1.5rem] font-black text-base transition-all shadow-2xl shadow-indigo-500/30">
-                                                Request Demo
+                                                Schedule Demo
                                                 <div className="bg-white/20 p-1 rounded-full group-hover:translate-x-1 transition-transform">
                                                     <ArrowRight className="w-5 h-5" />
                                                 </div>
@@ -105,7 +105,7 @@ const Product = () => {
                                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                             <Link to="/contact" className="flex items-center justify-center gap-3 bg-white border-2 border-slate-100 text-slate-900 hover:border-indigo-600 hover:text-indigo-600 px-8 py-3.5 rounded-[1.5rem] font-bold text-base transition-all shadow-xl shadow-slate-200/50">
                                                 <Command className="w-5 h-5 opacity-60" />
-                                                Docs
+                                                Platform Docs
                                             </Link>
                                         </motion.div>
                                     </div>
@@ -134,10 +134,10 @@ const Product = () => {
                                                 {[...Array(5)].map((_, i) => (
                                                     <Sparkles key={i} className="w-3 h-3 text-amber-400 fill-amber-400" />
                                                 ))}
-                                                <span className="text-xs font-black text-slate-900 ml-1 italic">Vanguard Tier</span>
+                                                <span className="text-xs font-black text-slate-900 ml-1 italic">Enterprise Intelligence Platform</span>
                                             </div>
                                             <div className="text-sm font-bold text-slate-500 tracking-tight">
-                                                Powering <span className="text-indigo-600">500+</span> Enterprise Vector Depots
+                                                Built for Large-Scale Data Systems
                                             </div>
                                         </div>
                                     </motion.div>
@@ -157,7 +157,7 @@ const Product = () => {
                                 className="absolute top-6 right-0 z-40 bg-white/5 backdrop-blur-md border border-indigo-500/10 p-3 rounded-2xl shadow-2xl hidden md:flex items-center gap-3"
                             >
                                 <MousePointer2 className="w-4 h-4 text-indigo-500" />
-                                <span className="text-[10px] font-black text-indigo-500 uppercase tracking-widest">Hover to probe nodes</span>
+                                <span className="text-[10px] font-black text-indigo-500 uppercase tracking-widest">Explore Connected Systems</span>
                             </motion.div>
 
                             <FadeInSection delay={0.6} direction="none" scale>
@@ -184,14 +184,14 @@ const Product = () => {
                     <FadeInSection scale>
                         <h2 className="text-6xl sm:text-7xl lg:text-8xl font-black text-slate-900 mb-12 tracking-tighter leading-[0.9]">
                             Scale <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600">Cognition</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600">Enterprise Intelligence</span>
                         </h2>
                         <p className="text-2xl text-slate-500 mb-16 font-medium max-w-3xl mx-auto">
-                            Join the world's most innovative enterprises using TOAI to drive decision-making at the speed of thought.
+                        Join forward-thinking organizations using TOAI to transform enterprise data into real-time operational intelligence.
                         </p>
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
                             <Link to="/contact" className="flex items-center gap-4 bg-slate-900 border-2 border-slate-900 text-white px-16 py-7 rounded-[3rem] font-black text-2xl transition-all shadow-3xl hover:bg-white hover:text-slate-900 group">
-                                Deploy Intelligence
+                            Deploy TOAI
                                 <ChevronRight className="w-8 h-8 group-hover:translate-x-2 transition-transform" />
                             </Link>
                         </motion.div>

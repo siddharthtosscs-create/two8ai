@@ -30,18 +30,18 @@ const About = () => {
                     <FadeInSection className="space-y-8">
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-700 font-semibold text-xs tracking-[0.22em] uppercase">
                             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
-                            TWO8AI · TOAI Platform
+                            TWO8AI · Enterprise Intelligence Platform
                         </div>
 
                         <div className="space-y-4">
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
                                 Building the intelligence layer
                                 <br />
-                                <span className="text-indigo-600">for every enterprise</span>
+                                <span className="text-indigo-600">for modern enterprises</span>
                             </h1>
                             <p className="text-base sm:text-lg text-slate-600 max-w-xl">
-                                TWO8AI is building TOAI, an intelligence OS that sits at the center of all your systems
-                                and connects data, tools, and workflows into one coherent brain for the enterprise.
+                                TWO8AI is building TOAI, an enterprise intelligence platform that sits above your systems
+                                and connects data, tools, and workflows into a unified reasoning layer for the organization.
                             </p>
                         </div>
                     </FadeInSection>
@@ -63,15 +63,15 @@ const About = () => {
                                 <div className="flex items-center justify-between mb-5">
                                     <div>
                                         <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-orange-500">
-                                            TOAI intelligence map
+                                            TOAI Intelligence Architecture
                                         </p>
                                         <p className="text-xs text-slate-500">
-                                            Systems that plug into the TOAI core.
+                                            Enterprise systems connected through the TOAI intelligence layer
                                         </p>
                                     </div>
                                     <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-semibold text-emerald-700">
                                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                                        Production ready
+                                        Enterprise Ready
                                     </span>
                                 </div>
 
@@ -87,38 +87,41 @@ const About = () => {
                                                 side="left"
                                                 icon={Users}
                                                 label="CRM"
-                                                tag="Customer data"
+                                                tag="Customer Intelligence Data"
                                                 colorClass="bg-orange-500"
                                             />
                                             <DiagramNode
                                                 side="left"
                                                 icon={MessageCircle}
                                                 label="WhatsApp"
-                                                tag="Conversations"
+                                                tag="Customer Conversations"
                                                 colorClass="bg-emerald-500"
                                             />
                                             <DiagramNode
                                                 side="left"
                                                 icon={Mail}
                                                 label="Emails"
-                                                tag="Threads & tickets"
+                                                tag="Communication Threads"
                                                 colorClass="bg-sky-500"
                                             />
                                             <DiagramNode
                                                 side="left"
                                                 icon={Code}
                                                 label="APIs"
-                                                tag="Internal services"
+                                                tag="Internal & External Services"
                                                 colorClass="bg-slate-900"
                                             />
                                         </div>
 
                                         {/* Center TOAI core */}
                                         <div className="relative z-10 flex w-full max-w-xs flex-col items-center justify-center px-7 py-5 rounded-[1.75rem] bg-white shadow-[0_18px_45px_rgba(248,113,22,0.45)] border border-orange-100 md:w-auto">
-                                            <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-1">
+                                            <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-1 text-center">
                                                 TOAI
                                             </p>
-                                            <p className="text-sm font-semibold text-slate-900">Intelligence OS</p>
+                                            <p className="text-sm font-semibold text-slate-900 text-center leading-tight">
+                                                <span className="block">Enterprise</span>
+                                                <span className="block">Intelligence OS</span>
+                                            </p>
                                         </div>
 
                                         {/* Right column nodes */}
@@ -127,28 +130,28 @@ const About = () => {
                                                 side="right"
                                                 icon={Building2}
                                                 label="ERP"
-                                                tag="Operations"
+                                                tag="Operational Systems"
                                                 colorClass="bg-orange-500"
                                             />
                                             <DiagramNode
                                                 side="right"
                                                 icon={Folder}
                                                 label="Google Drive"
-                                                tag="Files & assets"
+                                                tag="Enterprise Files & Assets"
                                                 colorClass="bg-amber-500"
                                             />
                                             <DiagramNode
                                                 side="right"
                                                 icon={FileText}
                                                 label="Docs"
-                                                tag="Knowledge base"
+                                                tag="Knowledge & Documentation"
                                                 colorClass="bg-rose-500"
                                             />
                                             <DiagramNode
                                                 side="right"
                                                 icon={Database}
                                                 label="Database"
-                                                tag="Transactional data"
+                                                tag="Structured & Transactional Data"
                                                 colorClass="bg-indigo-500"
                                             />
                                         </div>
@@ -186,10 +189,10 @@ const About = () => {
                         <span>Mission &amp; Vision</span>
                     </div>
                     <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
-                        The philosophy behind <span className="text-indigo-600">TOAI</span>
+                        The Philosophy Behind <span className="text-indigo-600">TOAI</span>
                     </h2>
                     <p className="text-base sm:text-lg text-slate-600">
-                        Why we&apos;re building this platform and the world we&apos;re aiming it at.
+                        Why we&apos;re building this platform and the future we believe enterprise intelligence should enable.
                     </p>
                 </FadeInSection>
 
@@ -211,14 +214,14 @@ const About = () => {
                                     <span className="tracking-[0.22em] uppercase">Our Mission</span>
                                 </div>
                                 <h3 className="text-2xl sm:text-3xl font-semibold leading-tight transition-colors duration-300 group-hover:text-indigo-100">
-                                    Turn scattered enterprise systems into one intelligence layer.
+                                    Turn fragmented enterprise systems into one intelligence layer.
                                 </h3>
                                 <p className="text-sm sm:text-base text-indigo-100/90 leading-relaxed max-w-xl">
                                     {aboutContent.mission}
                                 </p>
                                 <div className="mt-2 flex flex-wrap gap-2 text-[11px] text-slate-300">
                                     <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-indigo-300/70">
-                                        Outcome-first AI
+                                        Outcome-driven AI
                                     </span>
                                     <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-indigo-300/70">
                                         Deep systems understanding
@@ -248,7 +251,7 @@ const About = () => {
                                     <span className="tracking-[0.22em] uppercase">Our Vision</span>
                                 </div>
                                 <h3 className="text-2xl sm:text-3xl font-semibold leading-tight transition-colors duration-300 group-hover:text-white">
-                                    A world where every enterprise has a calm, orchestration-first brain.
+                                    A world where every enterprise operates with a calm, orchestration-first intelligence layer.
                                 </h3>
                                 <p className="text-sm sm:text-base text-indigo-50 leading-relaxed max-w-xl">
                                     {aboutContent.vision}
@@ -258,7 +261,7 @@ const About = () => {
                                         Human-in-the-loop by design
                                     </span>
                                     <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20 transition-all duration-300 group-hover:bg-white/25 group-hover:border-white/70">
-                                        Trustable AI in production
+                                        Trustworthy AI in production
                                     </span>
                                     <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20 transition-all duration-300 group-hover:bg-white/25 group-hover:border-white/70">
                                         Open &amp; interoperable
@@ -274,10 +277,10 @@ const About = () => {
             <section className="container mx-auto px-6 mb-20">
                 <FadeInSection className="max-w-4xl mb-10">
                     <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-                        What we&apos;re building with TOAI
+                        What We&apos;re Building with TOAI
                     </h2>
                     <p className="text-base sm:text-lg text-slate-600">
-                        Three simple pillars that show how TOAI lands inside real organisations.
+                        Three foundational pillars that show how TOAI integrates into real enterprise environments.
                     </p>
                 </FadeInSection>
 
@@ -287,34 +290,34 @@ const About = () => {
                         <AboutPillar
                             index={1}
                             icon={Brain}
-                            title="Unified knowledge fabric"
-                            tagline="Everything your teams know, in one view."
+                            title="Unified Knowledge Fabric"
+                            tagline="Bring every source of enterprise knowledge into one unified intelligence layer."
                             points={[
-                                'Connect ERPs, CRMs, tickets, docs, and warehouses.',
-                                'Normalise into a single, queryable model.',
-                                'Power search, retrieval, and reasoning everywhere.'
+                                'Connect ERPs, CRMs, ticketing systems, documents, and data warehouses',
+                                'Normalize data into a unified, queryable intelligence model',
+                                'Power enterprise search, retrieval, and reasoning across teams'
                             ]}
                         />
                         <AboutPillar
                             index={2}
                             icon={Network}
-                            title="Department-ready workflows"
-                            tagline="AI that plugs into how teams already work."
+                            title="Department-Ready Workflows"
+                            tagline="AI that fits naturally into how teams already operate."
                             points={[
-                                'Prebuilt flows for sales, support, ops, and IT.',
-                                'Trigger from chat, email, or internal tools.',
-                                'Ship value without ripping out existing systems.'
+                                'Prebuilt workflows for sales, support, operations, and IT',
+                                'Trigger actions through chat, email, or internal applications',
+                                'Deliver value without replacing the systems teams rely on'
                             ]}
                         />
                         <AboutPillar
                             index={3}
                             icon={ShieldCheck}
-                            title="Enterprise-grade guardrails"
-                            tagline="Trustable AI in the middle of critical systems."
+                            title="Enterprise-Grade Guardrails"
+                            tagline="AI designed for the complexity and accountability of real enterprises."
                             points={[
-                                'Granular permissions and data boundaries.',
-                                'Full observability on prompts, actions, and outcomes.',
-                                'Designed for audits, security teams, and regulators.'
+                                'Granular permissions and secure data boundaries',
+                                'Full observability into prompts, actions, and outcomes',
+                                'Built for audits, security teams, and regulatory environments'
                             ]}
                         />
                     </div>
@@ -324,16 +327,19 @@ const About = () => {
             {/* Philosophy */}
             <FadeInSection className="container mx-auto px-6 text-center max-w-3xl">
                 <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-                    Guided by &quot;Total Openness in Striving for Success&quot;
+                    Our Guiding Principle
                 </h2>
+                <p className="text-lg sm:text-xl font-semibold text-indigo-600 mb-6">
+                    &quot;Total Openness in Striving for Success&quot;
+                </p>
                 <p className="text-base sm:text-lg text-slate-600 mb-4">
-                    For us, TOAI is as much a philosophy as it is a platform. We build in partnership with customers,
-                    stay transparent about trade-offs, and focus on shipping real value into complex enterprises—not
-                    just prototypes.
+                    For us, TOAI is more than a platform—it is a philosophy of how intelligent systems should be built and deployed.
+                </p>
+                <p className="text-base sm:text-lg text-slate-600 mb-4">
+                    We believe in working closely with customers, staying transparent about trade-offs, and focusing on solutions that deliver real operational value inside complex organizations.
                 </p>
                 <p className="text-sm sm:text-base text-slate-500">
-                    That&apos;s why we design TOAI to be open, interoperable, and deeply aligned with how your teams
-                    already operate today.
+                    That&apos;s why TOAI is designed to be open, interoperable, and deeply aligned with how enterprises already work today.
                 </p>
             </FadeInSection>
         </div>

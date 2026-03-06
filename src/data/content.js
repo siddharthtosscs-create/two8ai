@@ -51,8 +51,8 @@ export const trustedBrands = [
 ];
 
 export const whatIsToai = {
-    title: "What is TOAI?",
-    description: "TOAI is not a chatbot. It is an enterprise AI foundation layer that connects to ERP, CRM, emails, chats, databases, PDFs, cloud, on-premise systems, and legacy software. It acts as a central intelligence system across departments."
+    title: "What Makes TOAI Different?",
+    description: "TOAI is not just another AI assistant. It is the Enterprise Intelligence Layer — a centralized system that connects your organization’s data, workflows, and software into one coordinated intelligence network."
 };
 
 export const howToaiWorks = {
@@ -68,93 +68,93 @@ export const howToaiWorks = {
 
 export const coreFeatures = [
     {
-        title: "Adaptive Conversation Engine",
+        title: "Enterprise Intelligence Interface",
         link: "/features",
         category: "Intelligence",
-        desc: "A cognitive interface that understands intent across 100+ languages, enabling complex multi-modal interactions with sub-second latency.",
+        desc: "A contextual intelligence interface that interprets enterprise queries, cross-system signals, and operational intent in real time.",
         color: "blue",
         icon: "MessageSquare",
-        highlights: ["LLM Agnostic", "Context Persistent", "Multi-lingual"],
+        highlights: ["Model Agnostic", "Persistent Context", "Multi-Language"],
         image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Autonomous Agent Swarms",
+        title: "Enterprise Reasoning Agents",
         link: "/features",
         category: "Intelligence",
-        desc: "Deploy self-learning digital workers capable of executing complex multi-step reasoning and cross-system operations without human intervention.",
+        desc: "Deploy intelligent agents that execute structured reasoning, cross-functional analysis, and coordinated system actions.",
         color: "indigo",
         icon: "UserPlus",
-        highlights: ["Auto-Reasoning", "Task Delegation", "Self-Correcting"],
+        highlights: ["Structured Reasoning", "Task Orchestration", "Adaptive Learning"],
         image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Universal Workflow Fabric",
+        title: "Cross-System Orchestration",
         link: "/features",
         category: "Intelligence",
-        desc: "The neural bridge between legacy mainframes and modern SaaS, automating high-frequency transactions with 99.9% semantic accuracy.",
+        desc: "A coordination layer connecting legacy infrastructure and modern SaaS platforms into unified operational workflows.",
         color: "amber",
         icon: "Zap",
-        highlights: ["Legacy Connect", "Hyper-automation", "Zero-Latency"],
+        highlights: ["Legacy Integration", "Workflow Automation", "Real-Time Sync"],
         image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Unstructured Data Unification",
+        title: "Enterprise Data Unification",
         link: "/features",
         category: "Foundation",
-        desc: "Ingest and vectorize multi-petabyte datasets, converting emails, voice, and visual assets into a unified high-dimensional knowledge graph.",
+        desc: "Process structured and unstructured enterprise data into a connected, high-dimensional intelligence graph.",
         color: "purple",
         icon: "Database",
-        highlights: ["Vector Search", "Knowledge Graphs", "Peta-scale"],
+        highlights: ["Semantic Search", "Intelligence Graphs", "Enterprise Scale"],
         image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Cognitive Document Intel",
+        title: "Document Intelligence Engine",
         link: "/features",
         category: "Foundation",
-        desc: "Beyond OCR: A vision-based system that extracts complex tabular data, sentiments, and legal nuances from fragmented physical archives.",
+        desc: "Extract structured insights, contextual relationships, and compliance signals from complex enterprise documents.",
         color: "rose",
         icon: "FileText",
-        highlights: ["Vision Transformers", "Legal Entrapment", "Entity Linkage"],
+        highlights: ["Vision Models", "Legal Context Mapping", "Entity Mapping"],
         image: "https://images.unsplash.com/photo-1620712943543-bcc4628c675c?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Enterprise Identity Guardian",
+        title: "Governance & Security Layer",
         link: "/features",
         category: "Insights",
-        desc: "The ultimate governance layer ensuring PII redaction, encryption-at-rest, and real-time compliance monitoring across all AI interactions.",
+        desc: "Built-in governance infrastructure enabling encryption, access control, auditability, and real-time compliance monitoring.",
         color: "slate",
         icon: "ShieldCheck",
-        highlights: ["Biometric Sync", "PII Redaction", "GDPR Native"],
+        highlights: ["Identity Sync", "PII Protection", "Compliance Ready"],
         image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Neural Supply Chain",
+        title: "Intelligent Supply Operations",
         link: "/features",
         category: "Solutions",
-        desc: "Predictive procurement agents that analyze global market shifts to optimize inventory turns and automate vendor negotiations.",
+        desc: "Intelligence-driven supply chain coordination that optimizes inventory, vendor alignment, and cost efficiency.",
         color: "emerald",
         icon: "ShoppingCart",
-        highlights: ["Market Pulse", "Auto-Negotiate", "JIT Delivery"],
+        highlights: ["Market Signals", "Vendor Automation", "Demand Alignment"],
         image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
     },
     {
-        title: "Contextual Support Core",
+        title: "Enterprise Support Intelligence",
         link: "/features",
         category: "Solutions",
-        desc: "Deliver 'Concierge-level' support with agents who possess full historical knowledge of every user interaction across every channel.",
+        desc: "Context-aware support intelligence with unified visibility across customer interactions and operational history.",
         color: "orange",
         icon: "Headphones",
-        highlights: ["Omni-channel", "Sentiment Aware", "Instant Resolve"],
+        highlights: ["Omni-Channel", "Sentiment Insight", "Rapid Resolution"],
         image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
     }
 ];
 
 export const enterpriseSecurity = [
-    "Hybrid SaaS + On-Prem Deployment",
-    "Role-Based Access Control",
-    "Multi-Tenant Architecture",
-    "Audit Logs",
-    "Compliance Monitoring"
+    "Hybrid Cloud + On-Prem Deployment",
+    "Role-Based Access Governance",
+    "Secure Multi-Tenant Architecture",
+    "Enterprise Audit Logs",
+    "Continuous Compliance Monitoring"
 ];
 
 export const productPageContent = {
@@ -175,12 +175,54 @@ export const productPageContent = {
 };
 
 export const services = [
-    { title: "AI/ML Annotation & Model Training", benefits: ["High accuracy", "Scalable workforce"] },
-    { title: "E-commerce Support", benefits: ["Catalog management", "Customer support automation"] },
-    { title: "IT & Custom Development", benefits: ["Tailored solutions", "Integration expertise"] },
-    { title: "Workforce & Payroll", benefits: ["Streamlined operations", "Compliance management"] },
-    { title: "Training & Development", benefits: ["Upskilling teams", "AI literacy"] },
-    { title: "Consulting & Strategy", benefits: ["Digital transformation", "AI roadmap"] }
+    {
+        title: "AI/ML Annotation & Model Training",
+        benefits: [
+            "High-precision data annotation — Accurate labeling pipelines for large-scale AI model development.",
+            "Scalable annotation workforce — Distributed teams supporting enterprise-level datasets."
+        ],
+        tailoredFor: "enterprise AI development"
+    },
+    {
+        title: "E-commerce Operations Support",
+        benefits: [
+            "Catalog intelligence management — Structured product data pipelines and catalog optimization.",
+            "Automated customer support workflows — AI-assisted ticketing, responses, and order resolution."
+        ],
+        tailoredFor: "scalable digital commerce"
+    },
+    {
+        title: "IT & Custom Platform Development",
+        benefits: [
+            "Tailored enterprise solutions — Custom applications aligned with operational workflows.",
+            "System integration expertise — Connect legacy systems, APIs, and enterprise infrastructure."
+        ],
+        tailoredFor: "enterprise scalability"
+    },
+    {
+        title: "Workforce & Payroll Operations",
+        benefits: [
+            "Streamlined workforce management — Automated HR workflows and employee operations.",
+            "Compliance-ready payroll processing — Secure payroll management aligned with regulatory standards."
+        ],
+        tailoredFor: "operational efficiency"
+    },
+    {
+        title: "Training & Capability Development",
+        benefits: [
+            "Workforce upskilling programs — Hands-on training for enterprise technology adoption.",
+            "Enterprise AI literacy programs — Enable teams to understand and leverage AI systems effectively."
+        ],
+        tailoredFor: "long-term capability growth"
+    },
+    {
+        title: "Consulting & Strategy",
+        benefits: [
+            "Digital transformation advisory — Strategic guidance for modernizing enterprise operations.",
+            "AI strategy & implementation roadmap — Define clear pathways for deploying enterprise intelligence systems."
+        ],
+        tailoredFor: "enterprise innovation"
+    }
 ];
 
 export const industries = [
@@ -216,8 +258,8 @@ export const aboutContent = {
         { label: "On-time Delivery", value: "97%+" },
         { label: "Project Accuracy", value: "100%" }
     ],
-    mission: "Deliver intelligent, impact-driven solutions that harness AI and human expertise.",
-    vision: "Shape the future in an AI-first world."
+    mission: "We build intelligent infrastructure that connects data, systems, and workflows—so organizations can reason, automate, and act with clarity across every part of their operations.",
+    vision: "We believe the next generation of organizations will run on systems that don't just store data—but understand, coordinate, and improve how work happens."
 };
 
 
